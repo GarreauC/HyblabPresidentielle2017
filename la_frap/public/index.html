@@ -1,40 +1,89 @@
 <!DOCTYPE html>
-<html lang="fr"> <!-- Notre page est en français -->
+<html lang="fr"> 
   <head>
-    <!-- Il est obligatoire de préciser un encodage de caractères et un titre pour la page -->
-    <meta charset="utf-8">
-    <title>Hyblab 2016</title>
-		<!-- Basic viewport setting for mobile friendly page -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Déclaration de la feuille de style du document-->
-    <link rel="stylesheet" href="css/style.css">
-		<!-- Those polyfills are required so that old browsers support fetch mecanism -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" defer ></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js" defer></script>
-		<!-- Simple sample script that loads data from a dummy json file -->
-		<script src="js/example.js" defer></script>
+	<!-- Il est obligatoire de préciser un encodage de caractères et un titre pour la page -->
+	<meta charset="utf-8">
+
+	<title>Hyblab 2016 : Team des Frapés</title>
+		
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Those polyfills are required so that old browsers support fetch mecanism -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" defer ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js" defer></script>
+
+	<!-- Fullpage.hs-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="fullPage.js/jquery.fullPage.js"></script>
+
+	<!-- D3 -->
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+
+	
+
+	<!-- Simple sample script that loads data from a dummy json file -->
+	<script src="js/example.js" defer></script>
+
+	<!-- Pour charger le fullpage.js -->
+	<script type="text/javascript">
+	$(document).ready(function() {
+	  $('#fullpage').fullpage({
+		anchors: ['firstPage', 'secondPage'],
+		menu: '#menu',
+		scrollingSpeed: 1000,
+
+	  });
+	});
+  </script>
+
   </head>
   <body>
-    <!-- Ce conteneur est la seule balise div que l'on s'autorise pour effectuer la mise en page du site -->
-    <!-- On pourrait bien sûr en ajouter d'autres pour se faciliter la mise en page -->
-    <!-- Mais on va s'efforce de respecter et brouiller le moins possible la structure logique du contenu -->
-    <div id="container">
+	<!-- Ce conteneur est la seule balise div que l'on s'autorise pour effectuer la mise en page du site -->
+	<!-- On pourrait bien sûr en ajouter d'autres pour se faciliter la mise en page -->
+	<!-- Mais on va s'efforce de respecter et brouiller le moins possible la structure logique du contenu -->
 
-    <!-- l'entête de la page: titre, barre de recherche -->
-    <header>
+	<div id="fullpage"> <!-- necessaire pour le fp.js-->
+
+		<!-- l'entête de la page: titre, barre de recherche -->
+
+		<section class="section" id="section0"> <!-- class section donne des pages à la vertivale--> 
+			
 			<img src="img/logo_hyblab.png" alt="logo hyblab"/>
-      <h1>Hyblab Datajournalism 2017</h1>
-    </header>
 
-    <!-- Le contenu du site -->
-    <p>Replace this content by your web app !</p>
+			<h1>Hyblab Datajournalism 2017</h1>
 
-		<p>Here is some data from a json file : <span id="data"></span><p>
+			<p>Replace this content by your web app !</p>
+		
+			<p>Here is some data from a json file : <span id="data"></span></p>
+			<p>Test parcours json : </p>
+			<span id="test"></span>
+			
+		 	
+		</section>
 
-    <!-- Notre pied de page -->
-    <footer>
-      <p>Copyright Hyblab team 2017</p>
-    </footer>
-    </div>
+		<section class="section" id="section1"> 
+
+			<div class="slide">
+
+					<h1> slide 1 </h1>
+
+			</div>
+
+			<div class="slide">
+
+					<h2> slide 2 ? </h2>
+
+			</div>
+			
+		</section>
+	
+	
+	<!-- Notre pied de page -->
+	<footer>
+	  <p>Copyright Hyblab 2017</p>
+	</footer>
+	</div>
   </body>
 </html>
