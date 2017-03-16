@@ -13,3 +13,292 @@ header img{
   max-width: 100%;
 	height: auto;
 }
+
+/*Carte*/
+
+
+#region{
+	width: 60vw;
+	margin-left: 20vw;
+}
+
+#map_mayenne{
+	width: 60vw;
+	margin-left: 20vw;
+}
+
+#map_sarthe{
+	width: 60vw;
+	margin-left: 20vw;
+}
+
+#map_la{
+	width: 60vw;
+	margin-left: 20vw;
+}
+
+#map_mel{
+	width: 60vw;
+	margin-left: 20vw;
+}
+
+#map_vendee{
+	width: 60vw;
+	margin-left: 20vw;
+}
+
+.land{
+	fill: #bcbfbf;
+	stroke: #FFF;
+	stroke-width: 1px; 
+	transition: fill 0.3s;
+}
+
+.land1{
+	fill: #bcbfbf;
+	stroke: #FFF;
+	stroke-width: 1px; 
+	transition: fill 0.3s;
+}
+
+.land.is-active{
+	fill: #59595b;
+}
+.land1.is-active{
+	fill: #59595b;
+}
+
+/*Titre*/
+.titre_section{
+	margin-left: 35vw;
+	font-size: 2vw;
+	position: relative;
+	top: 1vw;
+}
+
+#titre_region{
+	margin-left: 40vw;
+	margin-bottom: 0%;
+	font-size: 2vw;
+}
+
+.titre_slide{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1vw;
+	font-style: italic;
+	font-family: : fira-sans;
+	position: relative;
+	top: -9vw;
+
+	background: white;
+  	border: 0.2vw white solid;
+  	border-radius: 30vw;
+  	width: 17vw;
+  	height: 1.5vw;
+  	line-height: 1.5vw;
+  	text-align: center;
+}
+
+.sous_titre{
+	margin-left: 14vw;
+	margin-top: 1vw;
+	font-size: 1vw;
+	font-family: : fira-sans;
+	position: relative;
+  	top: -5.5vw; 
+}
+
+
+
+
+/*lien et images*/
+.lien{
+	text-decoration: none;
+	color: black;
+}
+
+.img_petit{
+	/*width:50px;
+	height:30px;*/
+	position: relative;
+	top: -5vw;
+	margin-left: 7vw;
+	width: 15vw;
+}
+
+.treemap{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+    position: relative;
+  	top: -5vw;
+}
+
+
+/*Gestion des annéess*/
+ .a1{
+  	border: 0.4vw black solid;
+  }
+ .a2{
+  	border: 0.4vw black solid;
+  }
+.a3{
+  	border: 0.4vw black solid;
+  }
+ .a4{
+  	border: 0.4vw black solid;
+  }
+ .a5{
+  	border: 0.4vw black solid;
+  }
+ .a6{
+  	border: 0.4vw black solid;
+  }
+ .a7{
+  	border: 0.4vw black solid;
+  }
+
+.annee{
+	display: inline-block;
+	width: 1vw;
+	height: 1vw;
+	text-align: center;
+	line-height: 1.5vw;
+	font-size: 0.8vw;
+	font-weight: bold;
+  	border-radius: 40vw;
+  	width: 5vw;
+  	height: 1.5vw;
+  	position: relative;
+  	top: -6vw;
+}
+
+.annee1{
+	margin-left: 30vw;
+}
+
+.centre{
+	background-color: #F8670D;
+}
+
+.inconnu{
+	background-color: #bcbfbf;
+}
+
+.gauche{
+	background-color: #f03134;
+}
+
+.droite{
+	background-color: #1840af;
+}
+
+.vert{
+	background-color: #1e5018;
+}
+
+
+/*Element de décor*/
+.carre{
+	background-color: #00a9ff;
+	height: 6vw;
+	width: 100vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.trait{
+	background-color: #00a9ff;;
+	height: 0.25vw;
+	width: 15vw;
+	margin-left: 14vw;
+	border-radius: 40vw;
+	position: relative;
+  	top: -6.2vw;
+}
+
+ .fond_cand{
+  	background-color: #bcbfbf;
+  	width: 100vw;
+  	height: 17vw;
+  	position: relative;
+  	top: -5vw;
+  }
+
+.rond{
+ 	display: block;
+  	background: white;
+  	/*border: 5px black solid;*/
+  	border-radius: 50vw;
+ 	height: 5.5vw;
+  	width: 5.5vw;
+  	line-height: 5.5vw;
+  	text-align: center;
+  	display: inline-block;
+  	font-size: 0.3vw;
+  }
+
+  .rond.rond4{
+  	margin-left: 15vw;
+  	margin-top: 1vw;
+  }
+
+ .rond.rond7{
+  	margin-left: 15vw;
+  	margin-top: 1vw;
+  }
+
+  .rond.rond8{
+  	margin-left: 15vw;
+  	margin-top: 1vw;
+  }
+
+   .rond.rond10{
+  	margin-left: 12vw;
+  	margin-top: 1vw;
+  }
+
+  .rond.rond12{
+  	margin-left: 9vw;
+  	margin-top: 1vw;
+  }
+
+  .rond.rond14{
+  	margin-left: 8vw;
+  	margin-top: 1vw;
+  }
+
+
+.b_gauche{
+  	border: 0.2vw #f03134 solid;
+ }
+
+.b_centre{
+	border: 0.2vw #F8670D solid;
+}
+
+.b_inconnu{
+	border: 0.2vw #bcbfbf solid;
+}
+
+.b_droite{
+	border: 0.2vw #1840af solid;
+}
+
+.b_vert{
+	border: 0.2vw #1e5018 solid;
+}
+
+/*
+ .premier{
+  	background-color: yellow;
+  }
+ .deuxieme{
+  	background-color: grey;
+  }
+*/
+ 
+
+
