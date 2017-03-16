@@ -64,7 +64,6 @@ fetch('data/53_data.json')
             .textContent = text;
         });
 */
-
 var region = document.querySelector("#region");
 var map_la = document.querySelector("#map_la");
 var map_mayenne = document.querySelector("#map_mayenne");
@@ -72,13 +71,28 @@ var map_sarthe = document.querySelector("#map_sarthe");
 var map_mel = document.querySelector("#map_mel");
 var map_vendee = document.querySelector("#map_vendee");
 
+var list_region = document.querySelector('#list_region');
+var list_la = document.querySelector("#list_la");
+var list_mayenne = document.querySelector("#list_mayenne");
+var list_sarthe = document.querySelector("#list_sarthe");
+var list_mel = document.querySelector("#list_mel");
+var list_vendee = document.querySelector("#list_vendee");
+
+
 var paths_region = region.querySelectorAll('.land');
+var links_region = list_region.querySelectorAll(".list_node");
 var paths_la = map_la.querySelectorAll('.land');
+var links_la = list_la.querySelectorAll('.list_node');
 var paths_mayenne = map_mayenne.querySelectorAll('.land');
+var links_mayenne = list_mayenne.querySelectorAll('.list_node');
 var paths_sarthe = map_sarthe.querySelectorAll('.land');
+var links_sarthe = list_sarthe.querySelectorAll('.list_node');
 var paths_mel = map_mel.querySelectorAll('.land');
+var links_mel = list_mel.querySelectorAll('.list_node');
 var paths_vendee = map_vendee.querySelectorAll('.land');
+var links_vendee = list_vendee.querySelectorAll('.list_node');
 var paths_vendee1 = map_vendee.querySelectorAll('.land1');
+var links_vendee1 = list_vendee.querySelectorAll('.list_node');
 
 //polyfill du foreach
 if(NodeList.prototype.forEach === undefined){
@@ -91,23 +105,42 @@ var activeArea =function(id){
     map_la.querySelectorAll('.is-active').forEach(function(item){
         item.classList.remove('is-active');
     })
+    list_la.querySelectorAll('.is-active').forEach(function(item){
+        item.classList.remove('is-active');
+    })
     region.querySelectorAll('.is-active').forEach(function(item){
+        item.classList.remove('is-active');
+    })
+    list_region.querySelectorAll('.is-active').forEach(function(item){
         item.classList.remove('is-active');
     })
     map_mayenne.querySelectorAll('.is-active').forEach(function(item){
         item.classList.remove('is-active');
     })
+    list_mayenne.querySelectorAll('.is-active').forEach(function(item){
+        item.classList.remove('is-active');
+    })
     map_sarthe.querySelectorAll('.is-active').forEach(function(item){
+        item.classList.remove('is-active');
+    })
+    list_sarthe.querySelectorAll('.is-active').forEach(function(item){
         item.classList.remove('is-active');
     })
     map_mel.querySelectorAll('.is-active').forEach(function(item){
         item.classList.remove('is-active');
     })
+    list_mel.querySelectorAll('.is-active').forEach(function(item){
+        item.classList.remove('is-active');
+    })
     map_vendee.querySelectorAll('.is-active').forEach(function(item){
+        item.classList.remove('is-active');
+    })
+    list_vendee.querySelectorAll('.is-active').forEach(function(item){
         item.classList.remove('is-active');
     })
     if(id !== undefined){
         document.querySelector('#map_'+ id).classList.add('is-active');
+        document.querySelector('#list_'+ id).classList.add('is-active');
     }
 }
 
@@ -117,8 +150,20 @@ paths_region.forEach(function(path){
         activeArea(id);
     });
 })
+links_region.forEach(function(link){
+    link.addEventListener('mouseenter', function(e){
+        var id = this.id.replace("list_", '');
+        activeArea(id);
+    });
+})
 paths_la.forEach(function(path){
     path.addEventListener('mouseenter', function(e){
+        var id = this.id.replace("map_", '');
+        activeArea(id);
+    });
+})
+links_la.forEach(function(link){
+    link.addEventListener('mouseenter', function(e){
         var id = this.id.replace("map_", '');
         activeArea(id);
     });
@@ -129,9 +174,21 @@ paths_mayenne.forEach(function(path){
         activeArea(id);
     });
 })
+links_mayenne.forEach(function(link){
+    link.addEventListener('mouseenter', function(e){
+        var id = this.id.replace("list_", '');
+        activeArea(id);
+    });
+})
 paths_sarthe.forEach(function(path){
     path.addEventListener('mouseenter', function(e){
         var id = this.id.replace("map_", '');
+        activeArea(id);
+    });
+})
+links_sarthe.forEach(function(link){
+    link.addEventListener('mouseenter', function(e){
+        var id = this.id.replace("list_", '');
         activeArea(id);
     });
 })
@@ -141,9 +198,21 @@ paths_mel.forEach(function(path){
         activeArea(id);
     });
 })
+links_mel.forEach(function(link){
+    link.addEventListener('mouseenter', function(e){
+        var id = this.id.replace("list_", '');
+        activeArea(id);
+    });
+})
 paths_vendee.forEach(function(path){
     path.addEventListener('mouseenter', function(e){
         var id = this.id.replace("map_", '');
+        activeArea(id);
+    })
+})
+links_vendee.forEach(function(link){
+    link.addEventListener('mouseenter', function(e){
+        var id = this.id.replace("list_", '');
         activeArea(id);
     })
 })
@@ -155,9 +224,20 @@ paths_vendee1.forEach(function(path){
         document.querySelector('#map_'+ id1).classList.add('is-active');
         document.querySelector('#map_'+ id2).classList.add('is-active');
         document.querySelector('#map_'+ id3).classList.add('is-active');
+        document.querySelector('#list_853').classList.add('is-active');
     })
 })
-
+links_vendee1.forEach(function(link){
+    link.addEventListener('mouseenter', function(e){
+        var id1 = document.getElementById("map_8531").id.replace("map_", '');
+        var id2 = document.getElementById("map_8532").id.replace("map_", '');
+        var id3 = document.getElementById("map_8533").id.replace("map_", '');
+        document.querySelector('#map_'+ id1).classList.add('is-active');
+        document.querySelector('#map_'+ id2).classList.add('is-active');
+        document.querySelector('#map_'+ id3).classList.add('is-active');
+        document.querySelector('#list_853').classList.add('is-active');
+    })
+})
 
 map_la.addEventListener('mouseover', function(){
     activeArea();

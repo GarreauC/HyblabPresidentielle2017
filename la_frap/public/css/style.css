@@ -15,36 +15,40 @@ header img{
 }
 
 /*Carte*/
-
-
 #region{
 	width: 60vw;
-	margin-left: 20vw;
+	margin-left: 5vw;
+	float: left;
 }
 
 #map_mayenne{
 	width: 60vw;
-	margin-left: 20vw;
+	margin-left: 5vw;
+	float: left;
 }
 
 #map_sarthe{
 	width: 60vw;
-	margin-left: 20vw;
+	margin-left: 5vw;
+	float: left;
 }
 
 #map_la{
 	width: 60vw;
-	margin-left: 20vw;
+	margin-left: 5vw;
+	float: left;
 }
 
 #map_mel{
 	width: 60vw;
-	margin-left: 20vw;
+	margin-left: 5vw;
+	float: left;
 }
 
 #map_vendee{
 	width: 60vw;
-	margin-left: 20vw;
+	margin-left: 5vw;
+	float: left;
 }
 
 .land{
@@ -66,6 +70,71 @@ header img{
 }
 .land1.is-active{
 	fill: #59595b;
+}
+
+/*Liste carte*/
+
+.list_node{
+	text-decoration: none;
+	color: #00a9ff;
+	font-family: : fira-sans;
+	font-size: 1.5vw;
+}
+.list_node.is-active{
+	text-decoration: none;
+	color: #00a9ff;
+	font-family: : fira-sans;
+	font-size: 3vw;
+	font-style: bold;
+	padding-left: 1vw;
+}
+#liste1{
+	float: right;
+	position: relative;
+	top: 15vw;
+	left: -5vw;
+	list-style-type:none;
+	width: 25vw;
+}
+#liste2{
+	float: right;
+	position: relative;
+	top: 15vw;
+	left: -5vw;
+	list-style-type:none;
+	width: 25vw;
+}
+#liste3{
+	float: right;
+	position: relative;
+	top: 15vw;
+	left: -5vw;
+	list-style-type:none;
+	width: 25vw;
+}
+#liste4{
+	float: right;
+	position: relative;
+	top: 15vw;
+	left: -5vw;
+	list-style-type:none;
+	width: 25vw;
+}
+#liste5{
+	float: right;
+	position: relative;
+	top: 15vw;
+	left: -5vw;
+	list-style-type:none;
+	width: 25vw;
+}
+#liste6{
+	float: right;
+	position: relative;
+	top: 15vw;
+	left: -5vw;
+	list-style-type:none;
+	width: 25vw;
 }
 
 /*Titre*/
