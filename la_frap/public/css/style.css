@@ -14,6 +14,10 @@ header img{
 	height: auto;
 }
 
+body {
+	font-family: 'Fira Sans'
+}
+
 /*Carte*/
 #region{
 	width: 60vw;
@@ -52,24 +56,24 @@ header img{
 }
 
 .land{
-	fill: #bcbfbf;
-	stroke: #FFF;
-	stroke-width: 1px; 
+	fill: #fff;
+	stroke: #bcbfbf;
+	stroke-width: 1.5px; 
 	transition: fill 0.3s;
 }
 
 .land1{
-	fill: #bcbfbf;
-	stroke: #FFF;
-	stroke-width: 1px; 
+	fill: #fff;
+	stroke: #bcbfbf;
+	stroke-width: 1.5px; 
 	transition: fill 0.3s;
 }
 
 .land.is-active{
-	fill: #59595b;
+	fill: #005afb;
 }
 .land1.is-active{
-	fill: #59595b;
+	fill: #005afb;
 }
 
 /*Liste carte*/
@@ -77,16 +81,12 @@ header img{
 .list_node{
 	text-decoration: none;
 	color: #00a9ff;
-	font-family: : fira-sans;
 	font-size: 1.5vw;
+	margin-top: 1vw;
 }
 .list_node.is-active{
 	text-decoration: none;
-	color: #00a9ff;
-	font-family: : fira-sans;
-	font-size: 3vw;
-	font-style: bold;
-	padding-left: 1vw;
+	color: #005afb;
 }
 #liste1{
 	float: right;
@@ -152,19 +152,12 @@ header img{
 }
 
 .titre_slide{
+	color: white;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 1vw;
-	font-style: italic;
-	font-family: : fira-sans;
+	font-size: 2vw;
 	position: relative;
-	top: -9vw;
-
-	background: white;
-  	border: 0.2vw white solid;
-  	border-radius: 30vw;
-  	width: 17vw;
-  	height: 1.5vw;
+	top: -10vw;
   	line-height: 1.5vw;
   	text-align: center;
 }
@@ -208,48 +201,48 @@ header img{
 
 /*Gestion des annéess*/
  .a1{
-  	border: 0.4vw black solid;
+  	border: 0.2vw black solid;
   }
  .a2{
-  	border: 0.4vw black solid;
+  	border: 0.2vw black solid;
   }
 .a3{
-  	border: 0.4vw black solid;
+  	border: 0.2vw black solid;
   }
  .a4{
-  	border: 0.4vw black solid;
+  	border: 0.2vw black solid;
   }
  .a5{
-  	border: 0.4vw black solid;
+  	border: 0.2vw black solid;
   }
  .a6{
-  	border: 0.4vw black solid;
+  	border: 0.2vw black solid;
   }
  .a7{
-  	border: 0.4vw black solid;
+  	border: 0.2vw black solid;
   }
 
 .annee{
+	padding-top: 0.5vw;
+	color: white;
 	display: inline-block;
-	width: 1vw;
-	height: 1vw;
 	text-align: center;
 	line-height: 1.5vw;
-	font-size: 0.8vw;
+	font-size: 1.3vw;
 	font-weight: bold;
-  	border-radius: 40vw;
-  	width: 5vw;
-  	height: 1.5vw;
+  	border-radius: 4px;
+  	width: 7vw;
+  	height: 2vw;
   	position: relative;
-  	top: -6vw;
+  	top: -9vw;
 }
 
 .annee1{
-	margin-left: 30vw;
+	margin-left: 25vw;
 }
 
 .centre{
-	background-color: #F8670D;
+	background-color: #fec240;
 }
 
 .inconnu{
@@ -257,15 +250,23 @@ header img{
 }
 
 .gauche{
-	background-color: #f03134;
+	background-color: #e90773;
 }
 
 .droite{
-	background-color: #1840af;
+	background-color: #007af1;
 }
 
 .vert{
-	background-color: #1e5018;
+	background-color: #0fc125;
+}
+
+.extreme_gauche {
+	background-color: #e9143c;
+}
+
+.extreme_droite {
+	background-color: #0016e8;
 }
 
 
@@ -288,6 +289,7 @@ header img{
   	top: -6.2vw;
 }
 
+/* 
  .fond_cand{
   	background-color: #cccccc;
   	width: 100vw;
@@ -295,6 +297,8 @@ header img{
   	position: relative;
   	top: -5vw;
   }
+*/
+
 
 .rond{
  	display: block;
@@ -357,6 +361,14 @@ header img{
 }
 
 .b_vert{
+	border: 0.2vw #1e5018 solid;
+}
+
+.b_extreme_gauche{
+	border: 0.2vw #1e5018 solid;
+}
+
+.b_extreme-droite{
 	border: 0.2vw #1e5018 solid;
 }
 
