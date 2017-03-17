@@ -236,23 +236,26 @@ body {
 .fil_dar{
 	display: inline-block;
 	position: relative;
-	top: -10vw;
+	top: -9vw;
 	left: 3vw;
 }
 .retour_reg{
 	text-decoration: none;
 	color: black;
 	font-size: 1vw;
+	font-weight: lighter;
 }
 .retour_dep{
 	text-decoration: none;
 	color: black;
 	font-size: 1vw;
+	font-weight: lighter;
 }
 .retour_cir{
 	color: black;
 	font-size: 1vw;
 	text-decoration: none;
+	font-weight: bold;
 }
 .entete{
 	position: relative;
