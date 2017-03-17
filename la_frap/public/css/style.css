@@ -236,7 +236,7 @@ body {
 .fil_dar{
 	display: inline-block;
 	position: relative;
-	top: -11vw;
+	top: -10vw;
 	left: 3vw;
 }
 .retour_reg{
@@ -252,6 +252,7 @@ body {
 .retour_cir{
 	color: black;
 	font-size: 1vw;
+	text-decoration: none;
 }
 .entete{
 	position: relative;
@@ -316,7 +317,7 @@ body {
 }
 
 .annee1{
-	margin-left: 13vw;
+	margin-left: 9vw;
 }
 
 .centre{
