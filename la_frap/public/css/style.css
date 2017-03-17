@@ -88,6 +88,16 @@ body {
 	text-decoration: none;
 	color: #005afb;
 }
+.list_node1{
+	text-decoration: none;
+	color: #00a9ff;
+	font-size: 1.5vw;
+	margin-top: 1vw;
+}
+.list_node1.is-active{
+	text-decoration: none;
+	color: #005afb;
+}
 #liste1{
 	float: right;
 	position: relative;
@@ -168,7 +178,7 @@ body {
 	font-size: 1vw;
 	font-family: : fira-sans;
 	position: relative;
-  	top: -5.5vw; 
+  	top: -8vw; 
 }
 
 
@@ -180,7 +190,7 @@ body {
 	color: black;
 }
 
-.img_petit{
+.img_id{
 	/*width:50px;
 	height:30px;*/
 	position: relative;
@@ -195,7 +205,28 @@ body {
     margin-right: auto;
     width: 40vw;
     position: relative;
-  	top: -5vw;
+  	top: -9vw;
+}
+
+.fil_dar{
+	display: inline-block;
+	position: relative;
+	top: -11vw;
+	left: 3vw;
+}
+.retour_reg{
+	text-decoration: none;
+	color: black;
+	font-size: 1vw;
+}
+.retour_dep{
+	text-decoration: none;
+	color: black;
+	font-size: 1vw;
+}
+.retour_cir{
+	color: black;
+	font-size: 1vw;
 }
 
 
@@ -238,7 +269,7 @@ body {
 }
 
 .annee1{
-	margin-left: 25vw;
+	margin-left: 13vw;
 }
 
 .centre{
@@ -286,7 +317,7 @@ body {
 	margin-left: 14vw;
 	border-radius: 40vw;
 	position: relative;
-  	top: -6.2vw;
+  	top: -8.5vw;
 }
 
 /* 
@@ -303,7 +334,7 @@ body {
 .rond{
  	display: block;
   	background: white;
-  	/*border: 5px black solid;*/
+  	border: 5px black solid;
   	border-radius: 50vw;
  	height: 5.5vw;
   	width: 5.5vw;
@@ -311,6 +342,8 @@ body {
   	text-align: center;
   	display: inline-block;
   	font-size: 0.3vw;
+  	position: relative;
+  	top: -8.5vw;
   }
 
   .rond.rond4{
@@ -380,6 +413,3 @@ body {
   	background-color: grey;
   }
 */
- 
-
-

@@ -92,7 +92,7 @@ var links_mel = list_mel.querySelectorAll('.list_node');
 var paths_vendee = map_vendee.querySelectorAll('.land');
 var links_vendee = list_vendee.querySelectorAll('.list_node');
 var paths_vendee1 = map_vendee.querySelectorAll('.land1');
-var links_vendee1 = list_vendee.querySelectorAll('.list_node');
+var links_vendee1 = list_vendee.querySelectorAll('.list_node1');
 
 //polyfill du foreach
 if(NodeList.prototype.forEach === undefined){
@@ -164,7 +164,7 @@ paths_la.forEach(function(path){
 })
 links_la.forEach(function(link){
     link.addEventListener('mouseenter', function(e){
-        var id = this.id.replace("map_", '');
+        var id = this.id.replace("list_", '');
         activeArea(id);
     });
 })
@@ -236,8 +236,15 @@ links_vendee1.forEach(function(link){
         document.querySelector('#map_'+ id2).classList.add('is-active');
         document.querySelector('#map_'+ id3).classList.add('is-active');
         document.querySelector('#list_853').classList.add('is-active');
+        paths_vendee.forEach(function(pathspe){
+            pathspe.classList.remove('is-active');
+        })
+        links_vendee.forEach(function(linkspe){
+            linkspe.classList.remove('is-active');
+        })
     })
 })
+
 
 map_la.addEventListener('mouseover', function(){
     activeArea();
