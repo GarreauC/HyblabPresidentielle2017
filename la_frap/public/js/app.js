@@ -265,260 +265,440 @@ map_vendee.addEventListener('mouseover', function(){
 })
 
 /*Generation des candidats*/
-var dep = [53,72,44,49,85];
-var circ= ["C1", "C2","C3","C4","C5","C6","C7","C8","C9","C10"]
-var id_cand=1;
-for(var i=1; i<211; i++){
-    if(i<22){
-        if(i<8){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[0]+'_'+circ[0]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(7<i && i<15){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[0]+'_'+circ[1]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(14<i && i<22){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[0]+'_'+circ[2]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-    }
-    if(21<i && i<56){
-        if(i<29){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[1]+'_'+circ[0]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(28<i && i<36){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[1]+'_'+circ[1]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(35<i && i<43){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[1]+'_'+circ[2]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(42<i && i<49){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[1]+'_'+circ[3]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(48<i && i<56){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[1]+'_'+circ[4]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-    }
-    if(55<i && i<126){
-        if(i<63){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[0]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(62<i && i<70){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[1]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(69<i && i<77){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[2]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(76<i && i<84){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[3]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(83<i && i<91){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[4]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(90<i && i<98){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[5]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(97<i && i<105){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[6]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(104<i && i<112){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[7]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(111<i && i<119){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[8]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(118<i && i<126){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[9]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-    }
-    if(125<i && i<175){
-        if(i<133){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[3]+'_'+circ[0]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(132<i && i<140){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[3]+'_'+circ[1]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(139<i && i<147){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[3]+'_'+circ[2]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(146<i && i<154){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[3]+'_'+circ[3]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(153<i && i<161){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[3]+'_'+circ[4]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(160<i && i<168){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[3]+'_'+circ[5]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(167<i && i<175){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[3]+'_'+circ[6]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-    }
-    if(174<i && i<211){
-        if(i<182){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[4]+'_'+circ[0]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(181<i && i<190){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[4]+'_'+circ[1]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(189<i && i<197){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[4]+'_'+circ[2]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(196<i && i<204){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[4]+'_'+circ[3]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-        if(203<i && i<211){
-            var elem = document.querySelector('#sect_cand_'+i);
-            var newElem = document.createElement('a');
-            newElem.innerHTML ="<p id='cand_"+dep[4]+'_'+circ[4]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
-            elem.class="lien_cand";
-            elem.href="#c_region"
-            elem.appendChild(newElem);
-        }
-    }
-    id_cand++;
-}   
 
+
+/*Papaparse*/
+function doStuff(table){
+    //Data is usable here
+    var dep = [53,72,44,49,85];
+    var circ= ["C1", "C2","C3","C4","C5","C6","C7","C8","C9","C10"];
+    var annee =["1988", "1993", "1997", "2002", "2007", "2012", "2017"];
+    console.log(table.data);
+    for(var i=1; i<211; i++){
+        console.log(i);
+        if (i%7 === 0){
+            var curseur_annee = 6
+        }else{
+            var curseur_annee = i%7-1
+        }
+        if(i<22){
+            if(i<8){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[0]+"_"+dep[0];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(7<i && i<15){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[1]+"_"+dep[0];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(14<i && i<22){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[2]+"_"+dep[0];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+        }
+        if(21<i && i<56){
+            if(i<29){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[0]+"_"+dep[1];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(28<i && i<36){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[1]+"_"+dep[1];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(35<i && i<43){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[2]+"_"+dep[1];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(42<i && i<50){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[3]+"_"+dep[1];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(49<i && i<57){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[4]+"_"+dep[1];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+        }
+        if(56<i && i<127){
+            if(i<64){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[0]+"_"+dep[2];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(63<i && i<71){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[1]+"_"+dep[2];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(70<i && i<78){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[2]+"_"+dep[2];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        console.log(annee[curseur_annee]);
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(77<i && i<85){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[3]+"_"+dep[2];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(84<i && i<92){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[4]+"_"+dep[2];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(91<i && i<99){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[5]+"_"+dep[2];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(98<i && i<106){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[6]+"_"+dep[2];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(105<i && i<113){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[7]+"_"+dep[2];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(112<i && i<120){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[8]+"_"+dep[2];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(119<i && i<127){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[9]+"_"+dep[2];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+        }
+        if(126<i && i<176){
+            if(i<134){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[0]+"_"+dep[2];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(133<i && i<141){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[1]+"_"+dep[3];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(140<i && i<148){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[2]+"_"+dep[3];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(147<i && i<155){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[3]+"_"+dep[3];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(154<i && i<162){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[4]+"_"+dep[3];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(161<i && i<169){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[5]+"_"+dep[3];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(168<i && i<176){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[6]+"_"+dep[3];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+        }
+        if(175<i && i<211){
+            if(i<183){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[0]+"_"+dep[4];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(182<i && i<190){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[1]+"_"+dep[4];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(189<i && i<197){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[2]+"_"+dep[4];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(196<i && i<204){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[3]+"_"+dep[4];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+            if(203<i && i<211){
+                var elem = document.querySelector('#sect_cand_'+i);
+                table.data.forEach(function(item){
+                    var cirdep = circ[4]+"_"+dep[4];
+                    if(cirdep === item[annee[curseur_annee]]){
+                        var newElem = document.createElement('a');
+                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
+                        elem.class="lien_cand";
+                        elem.href="#"
+                        elem.appendChild(newElem);
+                    }  
+                })
+            }
+        }
+    }   
+}
+
+function parseData(file, callBack) {
+    Papa.parse(file, {
+        delimiter: ",",
+        header: true,
+        dynamicTyping: true,
+        download: true,
+        encoding: "utf-8",
+        complete: function(results) {
+            doStuff(results);
+        },
+        error: function( error, file){
+            console.log(error);
+        }
+    });
+}
+
+parseData("data/basefinale.csv", doStuff);
