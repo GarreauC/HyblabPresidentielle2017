@@ -32,7 +32,7 @@ body {
 	margin-left: 15vw;
 	/*float: left;*/
 	position: relative;
-	top: -25vw;
+	top: -17vw;
 }
 
 #map_sarthe{
@@ -40,7 +40,7 @@ body {
 	margin-left: 15vw;
 	/*float: left;*/
 	position: relative;
-	top: -25vw;
+	top: -17vw;
 }
 
 #map_la{
@@ -48,7 +48,7 @@ body {
 	margin-left: 15vw;
 	/*float: left;*/
 	position: relative;
-	top: -30vw;
+	top: -18vw;
 }
 
 #map_mel{
@@ -56,7 +56,7 @@ body {
 	margin-left: 20vw;
 	/*float: left;*/
 	position: relative;
-	top: -45vw;
+	top: -16vw;
 }
 
 #map_vendee{
@@ -64,7 +64,7 @@ body {
 	margin-left: 15vw;
 	/*float: left;*/
 	position: relative;
-	top: -50vw;
+	top: -14vw;
 }
 
 .land{
@@ -111,52 +111,46 @@ body {
 	color: #005afb;
 }
 #liste1{
-	float: right;
 	position: relative;
-	top: -45vw;
-	left: 5vw;
+	top: -46.3vw;
+	left: 75vw;
 	list-style-type:none;
 	width: 25vw;
 }
 #liste2{
-	float: right;
 	position: relative;
-	top: -50vw;
-	left: 5vw;
+	top: -45vw;
+	left: 75vw;
 	list-style-type:none;
 	width: 25vw;
 }
 #liste3{
-	float: right;
 	position: relative;
-	top: -50vw;
-	left: 5vw;
+	top: -45vw;
+	left: 75vw;
 	list-style-type:none;
 	width: 25vw;
 }
 #liste4{
-	float: right;
 	position: relative;
-	top: -60vw;
-	left: 5vw;
+	top: -45vw;
+	left: 75vw;
 	list-style-type:none;
 	width: 25vw;
 }
 #liste5{
-	float: right;
 	position: relative;
-	top: -75vw;
-	left: 5vw;
+	top: -45vw;
+	left: 75vw;
 	list-style-type:none;
 	width: 25vw;
 }
 #liste6{
-	float: right;
 	position: relative;
-	top: -80vw;
-	left: -5vw;
+	top: -45vw;
+	left: 75vw;
 	list-style-type:none;
-	width: 20vw;
+	width: 25vw;
 }
 
 /*Titre*/
@@ -279,24 +273,31 @@ body {
 /*Gestion des annéess*/
  .a1{
   	border: 0.2vw black solid;
+  	opacity: 1.5;
   }
  .a2{
   	border: 0.2vw black solid;
+  	opacity: 1.5;
   }
 .a3{
   	border: 0.2vw black solid;
+  	opacity: 1.5;
   }
  .a4{
   	border: 0.2vw black solid;
+  	opacity: 1.5;
   }
  .a5{
   	border: 0.2vw black solid;
+  	opacity: 1.5;
   }
  .a6{
   	border: 0.2vw black solid;
+  	opacity: 1.5;
   }
  .a7{
   	border: 0.2vw black solid;
+  	opacity: 1.5;
   }
 
 .annee{
