@@ -50,7 +50,6 @@ fetch('data/53_data.json')
                 var str = item.split(" ");
 
                 if (str[1] == "Etiquette"){
-                    console.log(json.c1[annee].item);
                     text+= json.c1[annee][item] +" / ";
 
                 }
@@ -270,10 +269,8 @@ var dep = [53,72,44,49,85];
 var circ= ["C1", "C2","C3","C4","C5","C6","C7","C8","C9","C10"]
 var id_cand=1;
 for(var i=1; i<211; i++){
-    console.log(i);
     if(i<22){
         if(i<8){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[0]+'_'+circ[0]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -282,7 +279,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(7<i && i<15){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[0]+'_'+circ[1]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -291,7 +287,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(14<i && i<22){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[0]+'_'+circ[2]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -302,7 +297,6 @@ for(var i=1; i<211; i++){
     }
     if(21<i && i<56){
         if(i<29){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[1]+'_'+circ[0]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -311,7 +305,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(28<i && i<36){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[1]+'_'+circ[1]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -320,7 +313,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(35<i && i<43){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[1]+'_'+circ[2]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -329,7 +321,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(42<i && i<49){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[1]+'_'+circ[3]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -338,7 +329,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(48<i && i<56){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[1]+'_'+circ[4]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -349,7 +339,6 @@ for(var i=1; i<211; i++){
     }
     if(55<i && i<126){
         if(i<63){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[0]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -358,7 +347,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(62<i && i<70){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[1]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -367,7 +355,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(69<i && i<77){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[2]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -376,7 +363,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(76<i && i<84){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[3]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -385,7 +371,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(83<i && i<91){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[4]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -394,7 +379,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(90<i && i<98){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[5]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -403,7 +387,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(97<i && i<105){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[6]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -412,7 +395,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(104<i && i<112){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[7]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -421,7 +403,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(111<i && i<119){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[8]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -430,7 +411,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(118<i && i<126){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[2]+'_'+circ[9]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -441,7 +421,6 @@ for(var i=1; i<211; i++){
     }
     if(125<i && i<175){
         if(i<133){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[3]+'_'+circ[0]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -450,7 +429,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(132<i && i<140){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[3]+'_'+circ[1]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -459,7 +437,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(139<i && i<147){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[3]+'_'+circ[2]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -468,7 +445,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(146<i && i<154){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[3]+'_'+circ[3]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -477,7 +453,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(153<i && i<161){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[3]+'_'+circ[4]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -486,7 +461,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(160<i && i<168){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[3]+'_'+circ[5]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -495,7 +469,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(167<i && i<175){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[3]+'_'+circ[6]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -506,7 +479,6 @@ for(var i=1; i<211; i++){
     }
     if(174<i && i<211){
         if(i<182){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[4]+'_'+circ[0]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -515,7 +487,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(181<i && i<190){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[4]+'_'+circ[1]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -524,7 +495,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(189<i && i<197){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[4]+'_'+circ[2]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -533,7 +503,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(196<i && i<204){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[4]+'_'+circ[3]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";
@@ -542,7 +511,6 @@ for(var i=1; i<211; i++){
             elem.appendChild(newElem);
         }
         if(203<i && i<211){
-            console.log(i);
             var elem = document.querySelector('#sect_cand_'+i);
             var newElem = document.createElement('a');
             newElem.innerHTML ="<p id='cand_"+dep[4]+'_'+circ[4]+'_'+id_cand+"' class= 'rond rond4 cand'>Cand" +i+"</p>";

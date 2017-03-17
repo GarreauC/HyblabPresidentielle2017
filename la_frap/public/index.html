@@ -13,18 +13,22 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- Those polyfills are required so that old browsers support fetch mecanism -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" defer ></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js"></script>
 
-	<!-- Fullpage.hs-->
+	<!-- Fullpage.js-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="fullPage.js/jquery.fullPage.js"></script>
 
-	
+<!-- Chart.js-->
+  <script scr="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+  <script scr="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
 
-	<!-- Simple sample script that loads data from a dummy json file -->
-	<script src="js/example.js" defer></script>
+  <script type="text/javascript" src ="js/app.js" defer></script>
+  <script type="text/javascript" src ="js/DrawCharts.js" defer></script>
 
 	<!-- Pour charger le fullpage.js -->
 	<script type="text/javascript">
@@ -69,7 +73,7 @@
       <section class ="entete">
         <div class="carre"></div>
         <img class="img_sect" src="img/logo_pdl.png" alt="retour">
-        <img class="img_logo1" src="img/logofrap.png" alt="retour">
+        <img class="img_logo1" src="img/logoFrap.png" alt="retour">
         <p class="exp1">Renseignez-vous sur les candidats <br/> et les élections <strong>près de chez vous.</strong></p>
         <section class="trait2"></section>
         <p class="exp2">Recherchez votre circonscription <br/> en <strong>sélectionnant votre département.</strong></p>
@@ -146,7 +150,7 @@
     <section class ="entete">
         <div class="carre"></div>
         <img class="img_sect" src="img/logo_pdl.png" alt="retour">
-        <img class="img_logo1" src="img/logofrap.png" alt="retour">
+        <img class="img_logo1" src="img/logoFrap.png" alt="retour">
         <p class="exp1">Renseignez-vous sur les candidats <br/> et les élections <strong>près de chez vous.</strong></p>
         <section class="trait2"></section>
         <p class="exp3">sélectionnez votre <strong>circonscription.</strong></p>
@@ -212,7 +216,7 @@
       <section class ="entete">
         <div class="carre"></div>
         <img class="img_sect" src="img/logo_pdl.png" alt="retour">
-        <img class="img_logo1" src="img/logofrap.png" alt="retour">
+        <img class="img_logo1" src="img/logoFrap.png" alt="retour">
         <p class="exp1">Renseignez-vous sur les candidats <br/> et les élections <strong>près de chez vous.</strong></p>
         <section class="trait2"></section>
         <p class="exp3">sélectionnez votre <strong>circonscription.</strong></p>
@@ -302,7 +306,7 @@
       <section class ="entete">
         <div class="carre"></div>
         <img class="img_sect" src="img/logo_pdl.png" alt="retour">
-        <img class="img_logo1" src="img/logofrap.png" alt="retour">
+        <img class="img_logo1" src="img/logoFrap.png" alt="retour">
         <p class="exp1">Renseignez-vous sur les candidats <br/> et les élections <strong>près de chez vous.</strong></p>
         <section class="trait2"></section>
         <p class="exp3">sélectionnez votre <strong>circonscription.</strong></p>
@@ -419,7 +423,7 @@
       <section class ="entete">
         <div class="carre"></div>
         <img class="img_sect" src="img/logo_pdl.png" alt="retour">
-        <img class="img_logo1" src="img/logofrap.png" alt="retour">
+        <img class="img_logo1" src="img/logoFrap.png" alt="retour">
         <p class="exp1">Renseignez-vous sur les candidats <br/> et les élections <strong>près de chez vous.</strong></p>
         <section class="trait2"></section>
         <p class="exp3">sélectionnez votre <strong>circonscription.</strong></p>
@@ -522,7 +526,7 @@
       <section class ="entete">
         <div class="carre"></div>
         <img class="img_sect" src="img/logo_pdl.png" alt="retour">
-        <img class="img_logo1" src="img/logofrap.png" alt="retour">
+        <img class="img_logo1" src="img/logoFrap.png" alt="retour">
         <p class="exp1">Renseignez-vous sur les candidats <br/> et les élections <strong>près de chez vous.</strong></p>
         <section class="trait2"></section>
         <p class="exp3">sélectionnez votre <strong>circonscription.</strong></p>
@@ -650,7 +654,9 @@
             <a href="#c1_mayenne/s7_531"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_1_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -675,7 +681,9 @@
             <a href="#c1_mayenne/s7_531"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_1_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <section id="sect_cand_2"></section>
@@ -699,7 +707,9 @@
             <a href="#c1_mayenne/s7_531"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_1_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <section id="sect_cand_3"></section>
@@ -723,7 +733,9 @@
             <a href="#c1_mayenne/s7_531"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_1_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <section id="sect_cand_4"></section>
@@ -747,7 +759,9 @@
             <a href="#c1_mayenne/s7_531"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_1_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <section id="sect_cand_5"></section>
@@ -771,7 +785,9 @@
             <a href="#c1_mayenne/s7_531"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_1_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <section id="sect_cand_6"></section>
@@ -795,7 +811,9 @@
             <p class="annee inconnu a7"  >2017</p>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_1_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <section id="sect_cand_7"></section>
@@ -820,7 +838,9 @@
             <a href="#c2_mayenne/s7_532"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_2_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -845,7 +865,9 @@
             <a href="#c2_mayenne/s7_532"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_2_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -870,7 +892,9 @@
             <a href="#c2_mayenne/s7_532"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_2_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -895,7 +919,9 @@
             <a href="#c2_mayenne/s7_532"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_2_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -920,7 +946,9 @@
             <a href="#c2_mayenne/s7_532"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_2_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -945,7 +973,9 @@
             <a href="#c2_mayenne/s7_532"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_2_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -970,7 +1000,9 @@
             <p class="annee inconnu a7"  >2017</p>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_2_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -999,7 +1031,9 @@
             <a href="#c3_mayenne/s7_533"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_3_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1024,7 +1058,9 @@
             <a href="#c3_mayenne/s7_533"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_3_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1049,7 +1085,9 @@
             <a href="#c3_mayenne/s7_533"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_3_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1074,7 +1112,9 @@
             <a href="#c3_mayenne/s7_533"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_3_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1099,7 +1139,9 @@
             <a href="#c3_mayenne/s7_533"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_3_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1124,7 +1166,9 @@
             <a href="#c3_mayenne/s7_533"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_3_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1149,7 +1193,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_53_3_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1177,7 +1223,9 @@
             <a href="#c1_sarthe/s7_721"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_1_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1202,7 +1250,9 @@
             <a href="#c1_sarthe/s7_721"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_1_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1223,11 +1273,13 @@
             <p class="annee centre a3"  >1997</p>
             <a href="#c1_sarthe/s4_721"><p class="annee inconnu"  >2002</p></a>
             <a href="#c1_sarthe/s5_721"><p class="annee droite"  >2007</p></a>
-            <a href="#c1_sarthe/s7_721"><p class="annee gauche" >2012</p></a> 
-            <p class="annee inconnu"  >2017</p></a>
+            <a href="#c1_sarthe/s6_721"><p class="annee gauche" >2012</p></a> 
+            <a href="#c1_sarthe/s7_721"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_1_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1252,7 +1304,9 @@
             <a href="#c1_sarthe/s7_721"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_1_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1277,7 +1331,9 @@
             <a href="#c1_sarthe/s7_721"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_1_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1302,7 +1358,9 @@
             <a href="#c1_sarthe/s7_721"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_1_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1327,7 +1385,9 @@
             <p class="annee inconnu a7"  >2017</p>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_1_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1355,7 +1415,9 @@
             <a href="#c2_sarthe/s7_722"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_2_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1380,7 +1442,9 @@
             <a href="#c2_sarthe/s7_722"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_2_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1405,7 +1469,9 @@
             <a href="#c2_sarthe/s7_722"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_2_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1430,7 +1496,9 @@
             <a href="#c2_sarthe/s7_722"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_2_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1455,7 +1523,9 @@
             <a href="#c2_sarthe/s7_722"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_2_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1480,7 +1550,9 @@
             <a href="#c2_sarthe/s7_722"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_2_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1505,7 +1577,9 @@
             <p class="annee inconnu a7"  >2017</p>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_2_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1533,7 +1607,9 @@
             <a href="#c3_sarthe/s7_723"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_3_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1558,7 +1634,9 @@
             <a href="#c3_sarthe/s7_723"><p class="annee inconnu"  >2017</p></a>
             <<h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_3_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1583,7 +1661,9 @@
             <a href="#c3_sarthe/s7_723"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_3_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1608,7 +1688,9 @@
             <a href="#c3_sarthe/s7_723"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_3_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1624,7 +1706,7 @@
             <a href="#c_sarthe" class="retour_dep">Sarthe ></a>
             <a href="#c3_sarthe/s7_723" class="retour_cir">C3</a>
             </section>
-            <a href="#c3_sarthe/s1_723">p class="annee annee1 gauche" >1988</p></a>
+            <a href="#c3_sarthe/s1_723"><p class="annee annee1 gauche" >1988</p></a>
             <a href="#c3_sarthe/s2_723"><p class="annee droite"  >1993</p></a>
             <a href="#c3_sarthe/s3_723"><p class="annee gauche"  >1997</p></a>
             <a href="#c3_sarthe/s4_723"><p class="annee droite"  >2002</p></a>
@@ -1633,7 +1715,9 @@
             <a href="#c3_sarthe/s7_723"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_3_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1658,7 +1742,9 @@
             <a href="#c3_sarthe/s7_723"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_3_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1683,7 +1769,9 @@
             <p class="annee inconnu a7"  >2017</p>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_3_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1712,7 +1800,9 @@
             <a href="#c4_sarthe/s7_724"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_4_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1737,7 +1827,9 @@
             <a href="#c4_sarthe/s7_724"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_4_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1762,7 +1854,9 @@
             <a href="#c4_sarthe/s7_724"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_4_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1787,7 +1881,9 @@
             <a href="#c4_sarthe/s7_724"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_4_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1812,7 +1908,9 @@
             <a href="#c4_sarthe/s7_724"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_4_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1837,7 +1935,9 @@
             <a href="#c4_sarthe/s7_724"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_4_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1862,7 +1962,9 @@
             <p class="annee inconnu a7"  >2017</p>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_4_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1890,7 +1992,9 @@
             <a href="#c5_sarthe/s7_725"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_5_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1915,7 +2019,9 @@
             <a href="#c5_sarthe/s7_725"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_5_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1940,7 +2046,9 @@
             <a href="#c5_sarthe/s7_725"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_5_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1965,7 +2073,9 @@
             <a href="#c5_sarthe/s7_725"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_5_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -1990,7 +2100,9 @@
             <a href="#c5_sarthe/s7_725"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_5_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2015,7 +2127,9 @@
             <a href="#c5_sarthe/s7_725"><p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_5_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2040,7 +2154,9 @@
             <p class="annee inconnu a7"  >2017</p>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_72_5_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2068,7 +2184,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_1_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2093,7 +2211,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_1_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2118,7 +2238,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_1_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2143,7 +2265,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_1_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2168,7 +2292,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_1_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2193,7 +2319,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_1_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2218,7 +2346,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_1_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2246,7 +2376,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_2_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2271,7 +2403,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_2_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2296,7 +2430,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_2_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2321,7 +2457,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_2_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2346,7 +2484,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_2_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2371,7 +2511,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_2_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2396,7 +2538,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_2_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2424,7 +2568,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_3_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2449,7 +2595,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_3_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2474,7 +2622,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_3_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2499,7 +2649,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_3_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2524,7 +2676,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_3_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2549,7 +2703,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_3_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2574,7 +2730,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_3_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2602,7 +2760,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_4_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2627,7 +2787,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_4_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2652,7 +2814,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_4_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2677,7 +2841,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_4_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2702,7 +2868,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_4_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2727,7 +2895,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_4_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2752,7 +2922,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_4_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2780,7 +2952,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_5_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2805,7 +2979,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_5_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2830,7 +3006,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_5_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2855,7 +3033,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_5_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2880,7 +3060,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_5_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2905,7 +3087,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_5_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2930,7 +3114,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_5_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2958,7 +3144,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_6_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -2983,7 +3171,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_6_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3008,7 +3198,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_6_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3033,7 +3225,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_6_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3058,7 +3252,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_6_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3083,7 +3279,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_6_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3108,7 +3306,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_6_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3136,7 +3336,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_7_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3161,7 +3363,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_7_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3186,7 +3390,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_7_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3208,10 +3414,12 @@
             <p class="annee droite a4"  >2002</p></a>
             <p class="annee droite"  >2007</p>
             <p class="annee droite" >2012</p></a> 
-            <p class="annee droite"  >2017</p></a>
+            <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_7_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3236,7 +3444,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_7_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3261,7 +3471,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_7_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3286,7 +3498,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_7_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3314,7 +3528,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_8_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3339,7 +3555,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_8_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3364,7 +3582,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_8_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3384,12 +3604,14 @@
             <p class="annee centre"  >1993</p></a>
             <p class="annee gauche"  >1997</p></a>
             <p class="annee droite a4"  >2002</p></a>
-            <p class="annee droite"  >2007</p>
+            <p class="annee vert"  >2007</p>
             <p class="annee vert" >2012</p></a> 
-            <p class="annee vert"  >2017</p></a>
+            <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_8_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3414,7 +3636,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_8_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3439,7 +3663,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_8_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3464,7 +3690,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_8_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3492,7 +3720,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_9_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3517,7 +3747,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_9_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3542,7 +3774,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_9_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3567,7 +3801,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_9_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3592,7 +3828,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_9_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3617,7 +3855,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_9_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3642,7 +3882,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_9_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3670,7 +3912,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_10_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3695,7 +3939,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_10_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3720,7 +3966,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_10_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3745,7 +3993,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_10_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3770,7 +4020,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_10_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3795,7 +4047,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_10_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3820,7 +4074,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_44_10_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3848,7 +4104,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_1_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3873,7 +4131,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_1_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3898,7 +4158,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_1_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3923,7 +4185,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_1_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3948,7 +4212,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_1_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3973,7 +4239,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_1_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -3998,7 +4266,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_1_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4026,7 +4296,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_2_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4051,7 +4323,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_2_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4076,7 +4350,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_2_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4101,7 +4377,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_2_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4126,7 +4404,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_2_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4151,7 +4431,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_2_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4176,7 +4458,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_2_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4204,7 +4488,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_3_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4229,7 +4515,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_3_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4254,7 +4542,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_3_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4279,7 +4569,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_3_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4304,7 +4596,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_3_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4329,7 +4623,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_3_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4354,7 +4650,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_3_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4382,7 +4680,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_4_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4407,7 +4707,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_4_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4432,7 +4734,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_4_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4457,7 +4761,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_4_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4482,7 +4788,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_4_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4507,7 +4815,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_4_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4532,7 +4842,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_éé_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4560,7 +4872,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_5_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4585,7 +4899,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_5_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4610,7 +4926,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_5_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4635,7 +4953,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_5_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4660,7 +4980,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_5_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4685,7 +5007,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_5_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4710,7 +5034,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_5_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4738,7 +5064,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_6_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4763,7 +5091,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_6_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4788,7 +5118,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_6_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4813,7 +5145,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_6_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4838,7 +5172,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_6_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4863,7 +5199,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_6_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4888,7 +5226,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_6_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4916,7 +5256,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_7_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4941,7 +5283,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_7_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4966,7 +5310,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_7_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -4991,7 +5337,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_7_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -5016,7 +5364,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_7_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -5041,7 +5391,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_7_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -5066,7 +5418,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_49_7_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -5094,7 +5448,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_1_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -5119,7 +5475,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_1_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <section id="sect_cand_177"></section>
@@ -5143,7 +5501,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_1_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <section id="sect_cand_178"></section>
@@ -5167,7 +5527,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_1_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <section id="sect_cand_179"></section>
@@ -5191,7 +5553,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_1_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <section id="sect_cand_180"></section>
@@ -5215,7 +5579,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_1_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <section id="sect_cand_181"></section>
@@ -5239,7 +5605,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_1_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <section id="sect_cand_182"></section>
@@ -5265,7 +5633,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_2_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -5290,7 +5660,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_2_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <section id="sect_cand_184"></section>
@@ -5314,7 +5686,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_2_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <section id="sect_cand_185"></section>
@@ -5338,7 +5712,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_2_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <section id="sect_cand_186"></section>
@@ -5362,7 +5738,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_2_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <section id="sect_cand_187"></section>
@@ -5386,7 +5764,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_2_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <section id="sect_cand_188"></section>
@@ -5410,7 +5790,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_2_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <section id="sect_cand_189"></section>
@@ -5436,7 +5818,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_3_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -5461,7 +5845,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_3_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <section id="sect_cand_191"></section>
@@ -5485,7 +5871,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_3_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <section id="sect_cand_192"></section>
@@ -5509,7 +5897,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_3_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <section id="sect_cand_193"></section>
@@ -5533,7 +5923,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_3_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <section id="sect_cand_194"></section>
@@ -5557,7 +5949,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_3_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <section id="sect_cand_195"></section>
@@ -5581,7 +5975,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_3_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <section id="sect_cand_196"></section>
@@ -5607,7 +6003,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_4_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -5632,7 +6030,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_4_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <section id="sect_cand_198"></section>
@@ -5656,7 +6056,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_4_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <section id="sect_cand_199"></section>
@@ -5680,7 +6082,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_4_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <section id="sect_cand_200"></section>
@@ -5704,7 +6108,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_4_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <section id="sect_cand_201"></section>
@@ -5728,7 +6134,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_4_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <section id="sect_cand_202"></section>
@@ -5752,7 +6160,9 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_4_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <section id="sect_cand_203"></section>
@@ -5778,7 +6188,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1988</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_5_1988"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1988</h3>
             <div class="trait"></div>
             <!--exemple d'id de candidat id="cand6_c1_53_s3"-->
@@ -5803,7 +6215,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1993</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_5_1993"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1993</h3>
             <div class="trait"></div>
             <section id="sect_cand_205"></section>
@@ -5827,7 +6241,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 1997</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_5_1997"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 1997</h3>
             <div class="trait"></div>
             <section id="sect_cand_206"></section>
@@ -5851,7 +6267,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2002</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_5_2002"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2002</h3>
             <div class="trait"></div>
             <section id="sect_cand_207"></section>
@@ -5875,7 +6293,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2007</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_5_2007"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2007</h3>
             <div class="trait"></div>
             <section id="sect_cand_208"></section>
@@ -5899,7 +6319,9 @@
             <p class="annee inconnu"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2012</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_5_2012"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2012</h3>
             <div class="trait"></div>
             <section id="sect_cand_209"></section>
@@ -5923,14 +6345,16 @@
             <p class="annee inconnu a7"  >2017</p></a>
             <h3 class="sous_titre">Les résultats des légistatives 2017</h3>
             <div class="trait"></div>
-            <img src="img/treemap.jpg" alt="temp" class="treemap">
+            <section class = chartsection>
+              <canvas id = "Chart_85_5_2017"></canvas>
+            </section>
             <h3 class="sous_titre">Les candidats aux légistatives 2017</h3>
             <div class="trait"></div>
             <section id="sect_cand_210"></section>
       
     </section>
 
-	<script type="text/javascript" src ="js/app.js"></script>
+
 	
 	<!-- Notre pied de page -->
 	<footer>
