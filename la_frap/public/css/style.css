@@ -21,38 +21,50 @@ body {
 /*Carte*/
 #region{
 	width: 60vw;
-	margin-left: 5vw;
-	float: left;
+	margin-left: 15vw;
+	/*float: left;*/
+	position: relative;
+	top: -18vw;
 }
 
 #map_mayenne{
 	width: 60vw;
-	margin-left: 5vw;
-	float: left;
+	margin-left: 15vw;
+	/*float: left;*/
+	position: relative;
+	top: -25vw;
 }
 
 #map_sarthe{
 	width: 60vw;
-	margin-left: 5vw;
-	float: left;
+	margin-left: 15vw;
+	/*float: left;*/
+	position: relative;
+	top: -25vw;
 }
 
 #map_la{
 	width: 60vw;
-	margin-left: 5vw;
-	float: left;
+	margin-left: 15vw;
+	/*float: left;*/
+	position: relative;
+	top: -30vw;
 }
 
 #map_mel{
 	width: 60vw;
-	margin-left: 5vw;
-	float: left;
+	margin-left: 20vw;
+	/*float: left;*/
+	position: relative;
+	top: -45vw;
 }
 
 #map_vendee{
 	width: 60vw;
-	margin-left: 5vw;
-	float: left;
+	margin-left: 15vw;
+	/*float: left;*/
+	position: relative;
+	top: -50vw;
 }
 
 .land{
@@ -101,50 +113,50 @@ body {
 #liste1{
 	float: right;
 	position: relative;
-	top: 15vw;
-	left: -5vw;
+	top: -45vw;
+	left: 5vw;
 	list-style-type:none;
 	width: 25vw;
 }
 #liste2{
 	float: right;
 	position: relative;
-	top: 15vw;
-	left: -5vw;
+	top: -50vw;
+	left: 5vw;
 	list-style-type:none;
 	width: 25vw;
 }
 #liste3{
 	float: right;
 	position: relative;
-	top: 15vw;
-	left: -5vw;
+	top: -50vw;
+	left: 5vw;
 	list-style-type:none;
 	width: 25vw;
 }
 #liste4{
 	float: right;
 	position: relative;
-	top: 15vw;
-	left: -5vw;
+	top: -60vw;
+	left: 5vw;
 	list-style-type:none;
 	width: 25vw;
 }
 #liste5{
 	float: right;
 	position: relative;
-	top: 15vw;
-	left: -5vw;
+	top: -75vw;
+	left: 5vw;
 	list-style-type:none;
 	width: 25vw;
 }
 #liste6{
 	float: right;
 	position: relative;
-	top: 15vw;
+	top: -80vw;
 	left: -5vw;
 	list-style-type:none;
-	width: 25vw;
+	width: 20vw;
 }
 
 /*Titre*/
@@ -179,6 +191,25 @@ body {
 	font-family: : fira-sans;
 	position: relative;
   	top: -8vw; 
+}
+.exp1{
+	position: relative;
+	left: 10vw;
+	top: -5vw;
+	color: #00a9ff;
+	font-size: 1vw;
+}
+.exp2{
+	position: relative;
+	left: 10vw;
+	top: -5vw;
+	font-size: 1.2vw;
+}
+.exp3{
+	position: relative;
+	left: 10vw;
+	top: -5vw;
+	font-size: 1.2vw;
 }
 
 
@@ -228,7 +259,22 @@ body {
 	color: black;
 	font-size: 1vw;
 }
-
+.entete{
+	position: relative;
+	/*float: left;*/
+}
+.img_sect{
+	position: relative;
+	top: -8vw;
+	left: 5vw;
+	width: 17vw;
+}
+.img_logo1{
+	position: relative;
+	top: -5vw;
+	left: 59vw;
+	width: 8vw;
+}
 
 /*Gestion des annéess*/
  .a1{
@@ -318,6 +364,15 @@ body {
 	border-radius: 40vw;
 	position: relative;
   	top: -8.5vw;
+}
+.trait2{
+	background-color: #00a9ff;;
+	height: 0.35vw;
+	width: 3vw;
+	margin-left: 10vw;
+	border-radius: 40vw;
+	position: relative;
+  	top: -5vw;
 }
 
 /* 
