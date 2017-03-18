@@ -15,77 +15,77 @@ header img{
 }
 
 body {
-	font-family: 'Fira Sans'
+	font-family: 'Fira Sans';
 }
 
 /*Carte*/
 #region{
-	width: 60vw;
-	margin-left: 15vw;
+	width: 50vw;
+	margin-left: 24vw;
 	/*float: left;*/
 	position: relative;
-	top: -18vw;
+	top: -25.5vw;
 }
 
 #map_mayenne{
-	width: 60vw;
-	margin-left: 15vw;
+	width: 50vw;
+	margin-left: 24vw;
 	/*float: left;*/
 	position: relative;
-	top: -17vw;
+	top: -26vw;
 }
 
 #map_sarthe{
-	width: 60vw;
-	margin-left: 15vw;
+	width: 50vw;
+	margin-left: 24vw;
 	/*float: left;*/
 	position: relative;
-	top: -17vw;
+	top: -25.5vw;
 }
 
 #map_la{
-	width: 60vw;
-	margin-left: 15vw;
+	width: 50vw;
+	margin-left: 24vw;
 	/*float: left;*/
 	position: relative;
-	top: -18vw;
+	top: -25.5vw;
 }
 
 #map_mel{
-	width: 60vw;
-	margin-left: 20vw;
+	width: 50vw;
+	margin-left: 24vw;
 	/*float: left;*/
 	position: relative;
-	top: -16vw;
+	top: -26vw;
 }
 
 #map_vendee{
-	width: 60vw;
-	margin-left: 15vw;
+	width: 50vw;
+	margin-left: 24vw;
 	/*float: left;*/
 	position: relative;
-	top: -14vw;
+	top: -26vw;
 }
 
 .land{
-	fill: #fff;
-	stroke: #bcbfbf;
+	fill: #f2f2f2;
+	stroke: #cccccc;
 	stroke-width: 1.5px; 
 	transition: fill 0.3s;
 }
 
 .land1{
-	fill: #fff;
-	stroke: #bcbfbf;
+	fill: #f2f2f2;
+	stroke: #cccccc;
 	stroke-width: 1.5px; 
 	transition: fill 0.3s;
 }
 
 .land.is-active{
-	fill: #005afb;
+	fill: #00a9ff;
 }
 .land1.is-active{
-	fill: #005afb;
+	fill: #00a9ff;
 }
 
 /*Liste carte*/
@@ -94,11 +94,12 @@ body {
 	text-decoration: none;
 	color: #00a9ff;
 	font-size: 1.5vw;
-	margin-top: 1vw;
+	margin-top: 5vw;
 }
 .list_node.is-active{
 	text-decoration: none;
-	color: #005afb;
+	font-size: 2vw;
+	font-style: bold;
 }
 .list_node1{
 	text-decoration: none;
@@ -108,46 +109,47 @@ body {
 }
 .list_node1.is-active{
 	text-decoration: none;
-	color: #005afb;
+	font-size: 2vw;
+	font-style: bold;
 }
 #liste1{
 	position: relative;
-	top: -46.3vw;
+	top: -50vw;
 	left: 75vw;
 	list-style-type:none;
 	width: 25vw;
 }
 #liste2{
 	position: relative;
-	top: -45vw;
+	top: -50vw;
 	left: 75vw;
 	list-style-type:none;
 	width: 25vw;
 }
 #liste3{
 	position: relative;
-	top: -45vw;
+	top: -50vw;
 	left: 75vw;
 	list-style-type:none;
 	width: 25vw;
 }
 #liste4{
 	position: relative;
-	top: -45vw;
+	top: -50vw;
 	left: 75vw;
 	list-style-type:none;
 	width: 25vw;
 }
 #liste5{
 	position: relative;
-	top: -45vw;
+	top: -50vw;
 	left: 75vw;
 	list-style-type:none;
 	width: 25vw;
 }
 #liste6{
 	position: relative;
-	top: -45vw;
+	top: -50vw;
 	left: 75vw;
 	list-style-type:none;
 	width: 25vw;
@@ -173,7 +175,7 @@ body {
 	margin-right: auto;
 	font-size: 2vw;
 	position: relative;
-	top: -10vw;
+	top: -12.5vw;
   	line-height: 1.5vw;
   	text-align: center;
 }
@@ -187,23 +189,27 @@ body {
   	top: -8vw; 
 }
 .exp1{
+	font-family: : 'Roboto';
 	position: relative;
 	left: 10vw;
 	top: -5vw;
 	color: #00a9ff;
-	font-size: 1vw;
-}
-.exp2{
-	position: relative;
-	left: 10vw;
-	top: -5vw;
-	font-size: 1.2vw;
+	font-size: 1.1vw;
 }
 .exp3{
+	font-family: : 'Roboto';
+	position: relative;
+	color: #00a9ff;
+	left: 10vw;
+	top: -8vw;
+	font-size: 1.1vw;
+}
+.exp2{
+	font-family: : 'Roboto';
 	position: relative;
 	left: 10vw;
 	top: -5vw;
-	font-size: 1.2vw;
+	font-size: 1.5vw;
 }
 
 
@@ -214,16 +220,18 @@ body {
 	text-decoration: none;
 	color: black;
 }
-
+.lien_cand{
+	text-decoration: none;
+	color: black;
+}
 .img_id{
 	/*width:50px;
 	height:30px;*/
 	position: relative;
-	top: -5vw;
-	margin-left: 7vw;
-	width: 15vw;
+	top: -7.3vw;
+	margin-left: 5vw;
+	width: 16.91vw;
 }
-
 .chartsection{
 	display: block;
     margin-left: auto;
@@ -263,16 +271,108 @@ body {
 }
 .img_sect{
 	position: relative;
-	top: -8vw;
+	top: -16.2vw;
 	left: 5vw;
 	width: 17vw;
 }
 .img_logo1{
 	position: relative;
-	top: -5vw;
-	left: 59vw;
-	width: 8vw;
+	top: -13.5vw;
+	left: 62vw;
+	width: 7vw;
 }
+.img_logo2{
+	position: relative;
+	top: -4vw;
+	left: 62vw;
+	width: 7vw;
+}
+.img_logo3{
+	position: relative;
+	top: -13vw;
+	left: 66.8vw;
+	width: 7vw;
+}
+.img_entete1{
+	width:2.5vw;
+	position: relative;
+	top: 2vw;
+	left: 24vw;
+}
+.img_entete2{
+	width:3.5vw;
+	position: relative;
+	top: -0.8vw;
+	left: 39vw;
+}
+.img_entete3{
+	width:3.5vw;
+	position: relative;
+	top: -4.3vw;
+	left: 54.5vw;
+}
+.img_entete4{
+	width:3.5vw;
+	position: relative;
+	top: -8.2vw;
+	left: 70.3vw;
+}
+.img1{
+	width: 1.5vw;
+	position: relative;
+	top: -6.5vw;
+	left: 15.3vw;
+}
+.img2{
+	width: 1.5vw;
+	position: relative;
+	top: -10.45vw;
+	left: 34.8vw;
+}
+.img3{
+	width: 1.5vw;
+	position: relative;
+	top: -15.2vw;
+	left: 50.8vw;
+}
+.img4{
+	width: 1.5vw;
+	position: relative;
+	top: -19.85vw;
+	left: 66vw;
+}
+.msg1{
+	font-size: 0.7vw;
+	position: relative;
+	top: -8.5vw;
+	left:21vw;
+}
+.msg2{
+	font-size: 0.7vw;
+	position: relative;
+	top: -12.8vw;
+	left:36.8vw;
+}
+.msg3{
+	font-size: 0.7vw;
+	position: relative;
+	top: -17.7vw;
+	left:52.8vw;
+}
+.msg4{
+	font-size: 0.7vw;
+	position: relative;
+	top: -22.4vw;
+	left:68vw;
+}
+.img_excl{
+	width: 2vw;
+	position: relative;
+	left: 6.7vw;
+	top: -4.4vw;
+}
+
+
 
 /*Gestion des annéess*/
  .a1{
@@ -354,31 +454,63 @@ body {
 
 /*Element de décor*/
 .carre{
-	background-color: #00a9ff;
+	background-color: #2f2f2f;
 	height: 6vw;
+	width: 100vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+.carre2{
+	background-color: #f2f2f2;
+	height: 9vw;
 	width: 100vw;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .trait{
-	background-color: #00a9ff;;
+	background-color: #00a9ff;
 	height: 0.25vw;
 	width: 15vw;
 	margin-left: 14vw;
 	border-radius: 40vw;
 	position: relative;
-  	top: -8.5vw;
+  	top: -9vw;
 }
 .trait2{
-	background-color: #00a9ff;;
+	background-color: #00a9ff;
 	height: 0.35vw;
 	width: 3vw;
 	margin-left: 10vw;
 	border-radius: 40vw;
 	position: relative;
-  	top: -5vw;
+  	top: -5.2vw;
 }
+.trait_tete1{
+	background-color: #cccccc;
+	height: 0.15vw;
+	width: 12vw;
+	position: relative;
+	top: 0.8vw;
+	left: 26.5vw;
+}
+.trait_tete2{
+	background-color: #cccccc;
+	height: 0.15vw;
+	width: 12vw;
+	position: relative;
+	top: -2vw;
+	left: 42.5vw;
+}
+.trait_tete3{
+	background-color: #cccccc;
+	height: 0.15vw;
+	width: 12vw;
+	position: relative;
+	top: -5.4vw;
+	left: 57.9vw;
+}
+
 
 /* 
  .fond_cand{
@@ -393,12 +525,12 @@ body {
 
 .rond{
  	display: block;
-  	background: white;
-  	border: 5px black solid;
+  	background: red;
+  	/*border: 5px black solid;*/
   	border-radius: 50vw;
- 	height: 5.5vw;
-  	width: 5.5vw;
-  	line-height: 5.5vw;
+ 	height: 2vw;
+  	width: 2vw;
+  	line-height: 2vw;
   	text-align: center;
   	display: inline-block;
   	font-size: 0.3vw;
