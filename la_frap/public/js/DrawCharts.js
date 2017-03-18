@@ -1,6 +1,14 @@
 
 
+var colPartis = []
 
+$.getJSON("data/couleursPartis.json", function(data){
+	$.each(data, function(key, value){
+		colPartis[key]=value;
+	})
+}
+
+)
 
 var Data = function(circonscription,anneelec, departement){
 	var circ = circonscription;
@@ -33,7 +41,7 @@ var Data = function(circonscription,anneelec, departement){
 							var voixP = splititem[0] + " voix"
 							var voix = parseFloat(data[item][voixP]).toFixed(2)
 							var label = data[item][item2]
-							var couleur = "rgba(255, 99, 132, 0.5)";
+							var couleur = colPartis[label];
 							datacol[nbelemt] = [];
 							datacol[nbelemt][0]=voix;
 							datacol[nbelemt][1]=label;
@@ -46,7 +54,7 @@ var Data = function(circonscription,anneelec, departement){
 								var voixP = splititem[0] + " voix"
 								var voix = parseFloat(data[item][voixP]).toFixed(2)
 								var label = data[item][nuance]
-								var couleur = "rgba(255, 99, 132, 0.5)";
+								var couleur = colPartis[label];
 								datacol[nbelemt] = [];
 								datacol[nbelemt][0]=voix;
 								datacol[nbelemt][1]=label;
@@ -112,7 +120,7 @@ var dates = [1988,1993,1997,2002,2007,2012];
 
 for (var c=1;c<6;c++){
 	for(d=0;d<6;d++){
-		//console.log(c,dates[d])
+		
 		Data(c,dates[d],85)
 	}
 }
