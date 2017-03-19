@@ -286,10 +286,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[0];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -299,10 +299,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[0];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -312,10 +312,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[0];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -327,10 +327,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -340,10 +340,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -353,10 +353,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -366,10 +366,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -379,10 +379,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -394,10 +394,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -407,10 +407,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -420,11 +420,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        console.log(annee[curseur_annee]);
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -434,10 +433,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -447,10 +446,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -460,10 +459,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[5]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -473,10 +472,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[6]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -486,10 +485,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[7]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -499,10 +498,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[8]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -512,10 +511,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[9]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -527,10 +526,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -540,10 +539,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -553,10 +552,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -566,10 +565,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -579,10 +578,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -592,10 +591,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[5]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -605,10 +604,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[6]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -620,10 +619,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -633,10 +632,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -646,10 +645,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -659,10 +658,10 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
@@ -672,16 +671,117 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('a');
-                        newElem.innerHTML ="<p id='cand_"+item["id"]+"' class= 'rond cand'>"+item["Nom"]+" "+item["Prenom"]+"</p>";
-                        newElem.className="lien_cand";
-                        newElem.href="#"
+                        var newElem = document.createElement('p');
+                        newElem.id="cand_"+item["id"];
+                        newElem.className="rond cand";
+                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
                         elem.appendChild(newElem);
                     }  
                 })
             }
         }
-    }   
+    }
+    var totcand = document.querySelectorAll(".cand");
+
+    totcand.forEach(function(cand){
+        cand.addEventListener('click',function(e){
+            var id = this.id.replace("cand_",""); 
+            var parent = this.parentNode;
+            var idparent = parent.id.replace("sect_cand_","");
+            var sectvisi = document.querySelector("#sect_visi_"+idparent);
+            var sectinvi = document.querySelector("#sect_invi_"+idparent);
+            sectinvi.style.display = "block";
+            sectvisi.style.display="none";
+            var donneeCand = table.data[id];
+            var newimgc = document.createElement('img');
+            newimgc.id="imgC";
+            newimgc.src=donneeCand["Img_cand"];
+            sectinvi.appendChild(newimgc);
+            var newprenomc = document.createElement('p');
+            newprenomc.id="prenomC";
+            newprenomc.innerText=donneeCand["Prenom"];
+            sectinvi.appendChild(newprenomc);
+            var newnomc = document.createElement('p');
+            newnomc.id="NomC";
+            newnomc.innerText=donneeCand["Nom"];
+            sectinvi.appendChild(newnomc);
+            var newagec = document.createElement('p');
+            newagec.id="AgeC";
+            newagec.innerText=donneeCand["Age"];
+            sectinvi.appendChild(newagec);
+            var newetiquettec = document.createElement('p');
+            newetiquettec.id="EtiquetteC";
+            newetiquettec.innerText=donneeCand["Etiquette"];
+            sectinvi.appendChild(newetiquettec);
+            var newnbpresc = document.createElement('p');
+            newnbpresc.id="nbrPrestCr";
+            var calcpres = donneeCand["Nombre_presentation_C1"]+donneeCand["Nombre_presentation_C2"]+donneeCand["Nombre_presentation_C3"]+donneeCand["Nombre_presentation_C4"]+donneeCand["Nombre_presentation_C5"]+donneeCand["Nombre_presentation_C6"]+donneeCand["Nombre_presentation_C7"]+donneeCand["Nombre_presentation_C8"]+donneeCand["Nombre_presentation_C9"]+donneeCand["Nombre_presentation_C10"];
+            newnbpresc.innerText=calcpres;
+            sectinvi.appendChild(newnbpresc);
+            var newnbelec = document.createElement('p');
+            newnbelec.id="nrbEluC";
+            var calcElu = donneeCand["Nombre_Elu_C1"]+donneeCand["Nombre_Elu_C2"]+donneeCand["Nombre_Elu_C3"]+donneeCand["Nombre_Elu_C4"]+donneeCand["Nombre_Elu_C5"]+donneeCand["Nombre_Elu_C6"]+donneeCand["Nombre_Elu_C7"]+donneeCand["Nombre_Elu_C8"]+donneeCand["Nombre_Elu_C9"]+donneeCand["Nombre_Elu_C10"]
+            newnbelec.innerText=calcElu;
+            sectinvi.appendChild(newnbelec);
+            if(donneeCand["Site_perso"] != ""){
+                var newurlc = document.createElement('a');
+                newurlc.id="urlC";
+                newurlc.src=donneeCand["Site_perso"];
+                sectinvi.appendChild(newurlc);
+            }
+            if(donneeCand["Twitter"] != ""){
+                var newtwitterc = document.createElement('a');
+                newtwitterc.id="twitterC";
+                newtwitterc.href=donneeCand["Twitter"];
+                newtwitterc.innerHTML="<img src='img/twitter.png'>";
+                sectinvi.appendChild(newtwitterc);
+            }
+            if(donneeCand["Facebook"] != ""){
+                var newfacebookc = document.createElement('a');
+                newfacebookc.id="facebookC";
+                newfacebookc.href=donneeCand["Facebook"];
+                newfacebookc.innerHTML="<img src='img/facebook.png'>";
+                sectinvi.appendChild(newfacebookc);
+            }
+            var newpresc = document.createElement('p');
+            newpresc.id="presentationC";
+            newpresc.innerText=donneeCand["Phrase_pres_cand"];
+            sectinvi.appendChild(newpresc);
+            var newpresepartc = document.createElement('p');
+            newpresepartc.id="presentationParti";
+            newpresepartc.innerText=donneeCand["Phrase_pres_parti"];
+            sectinvi.appendChild(newpresepartc);
+        })
+    })
+    var fermes = document.querySelectorAll(".close");
+    fermes.forEach(function(ferme){
+        ferme.addEventListener('click', function(e){
+            var parentclose = this.parentNode;
+            var idinvi = parentclose.id.replace("sect_invi_","");
+            var sectvisi = document.querySelector("#sect_visi_"+idinvi);
+            sectvisi.style.display="block";
+            parentclose.style.display="none";
+            parentclose.removeChild(document.querySelector("#imgC"));
+            parentclose.removeChild(document.querySelector("#prenomC"));
+            parentclose.removeChild(document.querySelector("#NomC"));
+            parentclose.removeChild(document.querySelector("#AgeC"));
+            parentclose.removeChild(document.querySelector("#EtiquetteC"));
+            parentclose.removeChild(document.querySelector("#nbrPrestCr"));
+            parentclose.removeChild(document.querySelector("#nrbEluC"));
+            if(document.querySelector("#urlC")!=null){
+                parentclose.removeChild(document.querySelector("#urlC"));
+            }
+            if(document.querySelector("#twitterC")!=null){
+                parentclose.removeChild(document.querySelector("#twitterC"));
+            }
+            if(document.querySelector("#facebookC")!=null){
+                parentclose.removeChild(document.querySelector("#facebookC"));
+            }
+            parentclose.removeChild(document.querySelector("#presentationC"));
+            parentclose.removeChild(document.querySelector("#presentationParti"));
+        })
+    })
+    
 }
 
 function parseData(file, callBack) {
