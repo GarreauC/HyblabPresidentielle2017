@@ -740,28 +740,21 @@ function doStuff(table){
             newnomc.id="NomC";
             newnomc.innerText=donneeCand["Nom"];
             sectinvi.appendChild(newnomc);
+            var newetiquettec = document.createElement('p');
+            newetiquettec.id="EtiquetteC";
+            newetiquettec.innerText=donneeCand["Etiquette"];
+            newetiquettec.style.color=colPartis[donneeCand["Etiquette"]]
+            sectinvi.appendChild(newetiquettec);
             var newagec = document.createElement('p');
             newagec.id="AgeC";
             newagec.innerText=donneeCand["Age"];
             sectinvi.appendChild(newagec);
-            var newetiquettec = document.createElement('p');
-            newetiquettec.id="EtiquetteC";
-            newetiquettec.innerText=donneeCand["Etiquette"];
-            sectinvi.appendChild(newetiquettec);
-            var newnbpresc = document.createElement('p');
-            newnbpresc.id="nbrPrestCr";
-            var calcpres = donneeCand["Nombre_presentation_C1"]+donneeCand["Nombre_presentation_C2"]+donneeCand["Nombre_presentation_C3"]+donneeCand["Nombre_presentation_C4"]+donneeCand["Nombre_presentation_C5"]+donneeCand["Nombre_presentation_C6"]+donneeCand["Nombre_presentation_C7"]+donneeCand["Nombre_presentation_C8"]+donneeCand["Nombre_presentation_C9"]+donneeCand["Nombre_presentation_C10"];
-            newnbpresc.innerText=calcpres;
-            sectinvi.appendChild(newnbpresc);
-            var newnbelec = document.createElement('p');
-            newnbelec.id="nrbEluC";
-            var calcElu = donneeCand["Nombre_Elu_C1"]+donneeCand["Nombre_Elu_C2"]+donneeCand["Nombre_Elu_C3"]+donneeCand["Nombre_Elu_C4"]+donneeCand["Nombre_Elu_C5"]+donneeCand["Nombre_Elu_C6"]+donneeCand["Nombre_Elu_C7"]+donneeCand["Nombre_Elu_C8"]+donneeCand["Nombre_Elu_C9"]+donneeCand["Nombre_Elu_C10"]
-            newnbelec.innerText=calcElu;
-            sectinvi.appendChild(newnbelec);
+            
             if(donneeCand["Site_perso"] != ""){
                 var newurlc = document.createElement('a');
                 newurlc.id="urlC";
                 newurlc.src=donneeCand["Site_perso"];
+                newurlc.innerText=donneeCand["Site_perso"];
                 sectinvi.appendChild(newurlc);
             }
             if(donneeCand["Twitter"] != ""){
@@ -786,6 +779,16 @@ function doStuff(table){
             newpresepartc.id="presentationParti";
             newpresepartc.innerText=donneeCand["Phrase_pres_parti"];
             sectinvi.appendChild(newpresepartc);
+            var newnbpresc = document.createElement('p');
+            newnbpresc.id="nbrPrestCr";
+            var calcpres = donneeCand["Nombre_presentation_C1"]+donneeCand["Nombre_presentation_C2"]+donneeCand["Nombre_presentation_C3"]+donneeCand["Nombre_presentation_C4"]+donneeCand["Nombre_presentation_C5"]+donneeCand["Nombre_presentation_C6"]+donneeCand["Nombre_presentation_C7"]+donneeCand["Nombre_presentation_C8"]+donneeCand["Nombre_presentation_C9"]+donneeCand["Nombre_presentation_C10"];
+            newnbpresc.innerHTML=calcpres +"</br>Candidatures présentées";
+            sectinvi.appendChild(newnbpresc);
+            var newnbelec = document.createElement('p');
+            newnbelec.id="nrbEluC";
+            var calcElu = donneeCand["Nombre_Elu_C1"]+donneeCand["Nombre_Elu_C2"]+donneeCand["Nombre_Elu_C3"]+donneeCand["Nombre_Elu_C4"]+donneeCand["Nombre_Elu_C5"]+donneeCand["Nombre_Elu_C6"]+donneeCand["Nombre_Elu_C7"]+donneeCand["Nombre_Elu_C8"]+donneeCand["Nombre_Elu_C9"]+donneeCand["Nombre_Elu_C10"]
+            newnbelec.innerHTML=calcElu + "</br> Mandats effecués";
+            sectinvi.appendChild(newnbelec);
         })
     })
     var fermes = document.querySelectorAll(".close");

@@ -186,7 +186,7 @@ body {
 	font-size: 1vw;
 	font-family: : fira-sans;
 	position: relative;
-  	top: -8vw; 
+  	top: -11vw; 
 }
 .exp1{
 	font-family: : 'Roboto';
@@ -240,30 +240,32 @@ body {
     width: 55em !important;
     height: 12em !important;
     position: relative;
-  	top: -9vw;
+  	top: -11.5vw;
 }
 
 .fil_dar{
 	display: inline-block;
 	position: relative;
-	top: -9vw;
+	top: -12vw;
 	left: 3vw;
+    font-size: 1vw;
+    
 }
 .retour_reg{
 	text-decoration: none;
 	color: black;
-	font-size: 1vw;
+	
 	font-weight: lighter;
 }
 .retour_dep{
 	text-decoration: none;
 	color: black;
-	font-size: 1vw;
+	
 	font-weight: lighter;
 }
 .retour_cir{
 	color: black;
-	font-size: 1vw;
+	
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -418,7 +420,7 @@ body {
   	width: 7vw;
   	height: 2vw;
   	position: relative;
-  	top: -9vw;
+  	top: -12vw;
 }
 
 .annee1{
@@ -473,11 +475,11 @@ body {
 .trait{
 	background-color: #00a9ff;
 	height: 0.25vw;
-	width: 15vw;
+	width: 15.5vw;
 	margin-left: 14vw;
 	border-radius: 40vw;
 	position: relative;
-  	top: -9vw;
+  	top: -12vw;
 }
 .trait2{
 	background-color: #00a9ff;
@@ -607,3 +609,136 @@ body {
   	background-color: grey;
   }
 */
+
+/* ------- CV ------- */
+
+
+.close{
+	position: relative;
+	float: right;
+    width: 5vw;
+    
+}
+
+#imgC {
+    position: relative;
+    width: 9vw;
+    left: 12vw;
+    top: 2vw;
+}
+
+#prenomC {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.5vw;
+    left: 21vw;
+    top: -7vw;
+    text-transform: lowercase;
+    max-width: 20vw;
+}
+
+#prenomC::first-letter{
+    text-transform: capitalize;
+}
+
+#NomC {
+    position: relative;
+    left: 21vw;
+    top: -8.7vw;
+    font-size: 1.5vw;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+#NomC::first-letter {
+    text-transform: capitalize;
+}
+#EtiquetteC{
+    position: relative;
+    text-transform: lowercase;
+    left: 21vw;
+    top: -10.5vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+#EtiquetteC::first-letter{
+    text-transform: capitalize;
+}
+#AgeC{
+    position: relative;
+    left: 21.1vw;
+    top : -12.3vw;
+    min-height: 1.5vw;
+    font-size: 1.5vw;
+}
+
+
+
+#twitterC{
+    position: relative;
+    top: -20.5vw;
+    left: 20vw;
+}
+
+#twitterC img{
+    width: 3vw;
+}
+
+#facebookC{
+    position: relative;
+    top: -20.5vw;
+    left: 21vw; 
+}
+
+#facebookC img{
+    width: 3.2vw;
+}
+
+#urlC{
+    position: relative;
+    top: -17vw;
+    left: 37vw;
+}
+
+#presentationC{
+    max-width: 45vw;
+    position: relative;
+    top: -16vw;
+    left: 25vw;
+    text-align: left;
+}
+
+#presentationParti{
+    position: relative;
+    max-width: 45vw;
+    left: 25vw;
+    top: -16vw
+}
+#nbrPrestCr{
+    text-align: center;
+    position: relative;
+    max-width: 25vw;
+    
+    left: 20vw;
+    border-right: solid;
+    border-right-width: thin;
+    
+}
+#nbrPrestCr::first-line{  
+    font-size:5vw;
+    font-weight: bolder;
+}
+
+#nrbEluC{
+    text-align: center;
+    position: relative;
+    
+    top: -8.6vw;
+    max-width: 25vw;
+    left: 45vw;
+}
+
+#nrbEluC::first-line{
+    font-weight: bolder;
+    font-size: 5vw;
+}
+

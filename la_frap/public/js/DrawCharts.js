@@ -122,7 +122,7 @@ for( var ind_D=0; ind_D<departement.length ; ind_D++){
 							scales: {
 							            xAxes: [{
 							               	display: false,
-							                categoryPercentage: 1.0,
+							                categoryPercentage: 0.95,
 				            				barPercentage: 1.0
 							            }]
 							        },
