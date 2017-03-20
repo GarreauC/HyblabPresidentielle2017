@@ -1,68 +1,13 @@
 'use strict';
 
-// No need for window.onload event here since we are using the def attribute
-// when loading our scripts
+var colPartis = []
 
-// Load a dummy json file using the fetch API
-/*fetch('data/dummy.json')
-    // this promise will be fulfilled when the json fill will be
-    .then(function (response){
-        // if we could load the resource, parse it
-        if( response.ok )
-            return response.json();
-        else // if not, send some error message as JSON data
-            return {data: "JSON file not found"};
-
+$.getJSON("data/couleursPartis.json", function(data){
+    $.each(data, function(key, value){
+        colPartis[key]=value;
     })
-    // in case of invalid JSON (parse error) send some error message as JSON data
-    .catch( function (error){
-        return {data: "Invalid JSON"};
-    })
-    // this promise will be fulfilled when the json will be parsed
-    .then(function (json) {
-        document.querySelector('#data')
-            .textContent = json.data;
-    });*/
-/*
-fetch('data/53_data.json')
-    // this promise will be fulfilled when the json fill will be
-    .then(function (response){
-        // if we could load the resource, parse it
-        if( response.ok )
-            return response.json();
-        else // if not, send some error message as JSON data
-            return {data: "JSON file not found"};
+})
 
-    })
-    // in case of invalid JSON (parse error) send some error message as JSON data
-    .catch( function (error){
-        return {data: "Invalid JSON"};
-    })
-    // this promise will be fulfilled when the json will be parsed
-    .then(function (json) {
-        
-        var text="", annee,cand;
-
-        for (annee in json.c1){
-            text += "Annee " +json.c1[annee].Annee + "  Partis:";
-            
-            for (var item in json.c1[annee]){
-                var str = item.split(" ");
-
-                if (str[1] == "Etiquette"){
-                    text+= json.c1[annee][item] +" / ";
-
-                }
-            }
-            
-            
-        }
-        
-        
-        document.querySelector('#test')
-            .textContent = text;
-        });
-*/
 var region = document.querySelector("#region");
 var map_la = document.querySelector("#map_la");
 var map_mayenne = document.querySelector("#map_mayenne");
@@ -273,7 +218,7 @@ function doStuff(table){
     var dep = [53,72,44,49,85];
     var circ= ["C1", "C2","C3","C4","C5","C6","C7","C8","C9","C10"];
     var annee =["1988", "1993", "1997", "2002", "2007", "2012", "2017"];
-    console.log(table.data);
+    //console.log(table.data);
     for(var i=1; i<211; i++){
         if (i%7 === 0){
             var curseur_annee = 6
@@ -290,6 +235,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -303,6 +251,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -316,6 +267,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -331,6 +285,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -344,6 +301,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -357,6 +317,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -370,6 +333,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -383,6 +349,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -398,6 +367,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -411,6 +383,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -424,6 +399,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -437,6 +415,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -450,6 +431,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -463,6 +447,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -476,6 +463,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -489,6 +479,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -502,6 +495,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -515,6 +511,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -530,6 +529,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -543,6 +545,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -556,6 +561,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -569,6 +577,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -582,6 +593,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -595,6 +609,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -608,6 +625,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -623,6 +643,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -636,6 +659,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -649,6 +675,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -662,6 +691,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })
@@ -675,6 +707,9 @@ function doStuff(table){
                         newElem.id="cand_"+item["id"];
                         newElem.className="rond cand";
                         newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var etiq = item["Etiquette"];
+                        var color = colPartis[etiq];
+                        newElem.style.backgroundColor= color;
                         elem.appendChild(newElem);
                     }  
                 })

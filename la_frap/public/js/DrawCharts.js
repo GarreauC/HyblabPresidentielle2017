@@ -59,13 +59,20 @@ for( var ind_D=0; ind_D<departement.length ; ind_D++){
 										
 										var voixP = splititem[0] + " voix"
 										var voix = parseFloat(data[item][voixP]).toFixed(2)
-										var label = data[item][item2]
-										var couleur = colPartis[label];
+										var label = data[item][item2];
+										var couleur;
+										if (label === "SANS ETIQUETTE" || label === "UNION DU RASSEMBLEMENT ET DU CENTRE"){
+											var nuance = splititem[0] + " nuance";
+											var labnuance = data[item][nuance];
+											couleur = colPartis[labnuance];
+										}else{couleur = colPartis[label];}
+										
 										datacol[nbelemt] = [];
 										datacol[nbelemt][0]=voix;
 										datacol[nbelemt][1]=label;
 										datacol[nbelemt][2]=couleur
 										nbelemt+=1;
+										//if(voix>=50){console.log(depart, annee, ind_C, label, couleur)}
 									}
 									else{
 										var nuance = splititem[0] + " nuance";
@@ -79,6 +86,7 @@ for( var ind_D=0; ind_D<departement.length ; ind_D++){
 											datacol[nbelemt][1]=label;
 											datacol[nbelemt][2]=couleur
 											nbelemt+=1;
+											//if(voix>=50){console.log(depart, annee, ind_C, label, couleur)}
 										}
 									}
 								}
