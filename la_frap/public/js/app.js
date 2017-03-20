@@ -731,6 +731,7 @@ function doStuff(table){
             var newimgc = document.createElement('img');
             newimgc.id="imgC";
             newimgc.src=donneeCand["Img_cand"];
+            newimgc.style.borderColor = colPartis[donneeCand["Etiquette"]];
             sectinvi.appendChild(newimgc);
             var newprenomc = document.createElement('p');
             newprenomc.id="prenomC";

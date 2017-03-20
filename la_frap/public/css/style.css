@@ -623,8 +623,10 @@ body {
 #imgC {
     position: relative;
     width: 9vw;
-    left: 12vw;
+    left: 10vw;
     top: 2vw;
+    border: solid;
+    border-radius: 50%;
 }
 
 #prenomC {
@@ -663,6 +665,8 @@ body {
 #EtiquetteC::first-letter{
     text-transform: capitalize;
 }
+
+
 #AgeC{
     position: relative;
     left: 21.1vw;
