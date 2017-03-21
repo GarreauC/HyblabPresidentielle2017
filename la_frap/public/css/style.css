@@ -192,7 +192,7 @@ body {
 	font-family: : 'Roboto';
 	position: relative;
 	left: 10vw;
-	top: -5vw;
+	top: -4vw;
 	color: #00a9ff;
 	font-size: 1.1vw;
 }
@@ -201,14 +201,14 @@ body {
 	position: relative;
 	color: #00a9ff;
 	left: 10vw;
-	top: -8vw;
+	top: -7vw;
 	font-size: 1.1vw;
 }
 .exp2{
 	font-family: : 'Roboto';
 	position: relative;
 	left: 10vw;
-	top: -5vw;
+	top: -4vw;
 	font-size: 1.5vw;
 }
 
@@ -246,25 +246,33 @@ body {
 .fil_dar{
 	display: inline-block;
 	position: relative;
-	top: -12vw;
+	top: -14vw;
 	left: 3vw;
+    font-size: 1vw;
+    
+}
+.fil_dar_carte{
+	display: inline-block;
+	position: relative;
+	top: -5vw;
+	left: -18vw;
     font-size: 1vw;
     
 }
 .retour_reg{
 	text-decoration: none;
-	color: black;
+	color: #2f2f2f;
 	
 	font-weight: lighter;
 }
 .retour_dep{
 	text-decoration: none;
-	color: black;
+	color: #2f2f2f;
 	
 	font-weight: lighter;
 }
 .retour_cir{
-	color: black;
+	color: #2f2f2f;
 	
 	text-decoration: none;
 	font-weight: bold;
@@ -373,7 +381,7 @@ body {
 	width: 2vw;
 	position: relative;
 	left: 6.7vw;
-	top: -4.4vw;
+	top: -3.4vw;
 }
 
 
@@ -529,7 +537,7 @@ body {
 
 .rond{
  	display: block;
-  	background: red;
+ 	background-color: #cccccc;
   	/*border: 5px black solid;*/
   	border-radius: 50vw;
  	height: 2vw;
@@ -541,7 +549,10 @@ body {
   	position: relative;
   	top: -8.5vw;
   }
+  .cand{
 
+  }
+/*
   .rond.rond4{
   	margin-left: 15vw;
   	margin-top: 1vw;
@@ -571,7 +582,7 @@ body {
   	margin-left: 8vw;
   	margin-top: 1vw;
   }
-
+*/
 
 .b_gauche{
   	border: 0.2vw #f03134 solid;

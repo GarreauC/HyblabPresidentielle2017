@@ -231,14 +231,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[0];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -247,14 +250,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[0];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -263,14 +269,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[0];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -281,14 +290,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -297,14 +309,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -313,14 +328,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -329,14 +347,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -345,14 +366,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -363,14 +387,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -379,14 +406,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -395,14 +425,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -411,14 +444,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -427,14 +463,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -443,14 +482,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[5]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -459,14 +501,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[6]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -475,14 +520,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[7]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -491,14 +539,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[8]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -507,14 +558,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[9]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -525,14 +579,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -541,14 +598,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -557,14 +617,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -573,14 +636,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -589,14 +655,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -605,14 +674,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[5]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -621,14 +693,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[6]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -639,14 +714,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -655,14 +733,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -671,14 +752,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -687,14 +771,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -703,14 +790,17 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
-                        var newElem = document.createElement('p');
-                        newElem.id="cand_"+item["id"];
-                        newElem.className="rond cand";
-                        newElem.innerText=item["Nom"]+" "+item["Prenom"];
+                        var newElemP = document.createElement('p');
+                        newElemP.id="cand_"+item["id"];
+                        newElemP.innerText=item["Nom"]+" "+item["Prenom"];
+                        newElemP.className='cand';
+                        var newElemR = document.createElement('section');
+                        newElemR.className="rond";
                         var etiq = item["Etiquette"];
                         var color = colPartis[etiq];
-                        newElem.style.backgroundColor= color;
-                        elem.appendChild(newElem);
+                        newElemR.style.backgroundColor= color;
+                        elem.appendChild(newElemR);
+                        elem.appendChild(newElemP);
                     }  
                 })
             }
@@ -732,7 +822,7 @@ function doStuff(table){
             newimgc.id="imgC";
             newimgc.style.borderColor = colPartis[donneeCand["Etiquette"]];
             if(donneeCand["Img_cand"]!=""){
-                newimgc.src=donneeCand["Img_cand"];
+                newimgc.src="img/photos-candidats/"+donneeCand["Img_cand"];
             }else{
                 var sexe = donneeCand["Sexe"];
                 newimgc.src="img/Avatar"+sexe+".png";
