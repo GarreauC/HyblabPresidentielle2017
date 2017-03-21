@@ -237,10 +237,12 @@ body {
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 55em !important;
-    height: 12em !important;
+    width: 50em !important;
+    height: 14em !important;
     position: relative;
-  	top: -10vw;
+    left: 10vw;
+  	top: -9.7vw;
+  	z-index: 1;
 }
 
 .fil_dar{
@@ -543,17 +545,20 @@ body {
   	width: 2vw;
   	line-height: 2vw;
   	font-size: 0.3vw;
-
+  	position: relative;
+  	top: 2vw;
     
     
   }
 
-  .cand{   
-      text-align: center;
-      text-transform: capitalize; 
-      margin-top: 1vw;
-      margin-bottom: 1.5vw;
-  }
+.cand{   
+  text-align: center;
+  text-transform: capitalize; 
+  margin-top: 1vw;
+  margin-bottom: 1.1vw;
+  position: relative;
+  top: 1vw; 
+}
 
 
 .b_gauche{
@@ -618,37 +623,31 @@ body {
     font-size: 1.5vw;
     left: 21vw;
     top: -7vw;
-    text-transform: lowercase;
+    text-transform: capitalize;
     max-width: 20vw;
+
 }
 
-#prenomC::first-letter{
-    text-transform: capitalize;
-}
 
 #NomC {
     position: relative;
     left: 21vw;
     top: -8.7vw;
     font-size: 1.5vw;
-    text-transform: lowercase;
+    text-transform: capitalize;
     font-weight: bold;
     max-width: 20vw;
 }
-#NomC::first-letter {
-    text-transform: capitalize;
-}
+
 #EtiquetteC{
     position: relative;
-    text-transform: lowercase;
+    text-transform: capitalize;
     left: 21vw;
     top: -10.5vw;
     font-size: 1.5vw;
     font-weight: bold;
 }
-#EtiquetteC::first-letter{
-    text-transform: capitalize;
-}
+
 
 
 #AgeC{
@@ -665,7 +664,7 @@ body {
 #twitterC{
     position: relative;
     top: -20.5vw;
-    left: 20vw;
+    left: 50vw;
 }
 
 #twitterC img{
@@ -675,7 +674,7 @@ body {
 #facebookC{
     position: relative;
     top: -20.5vw;
-    left: 21vw; 
+    left: 51vw; 
 }
 
 #facebookC img{
@@ -684,8 +683,8 @@ body {
 
 #urlC{
     position: relative;
-    top: -15vw;
-    left: 37vw;
+    top: -17vw;
+    left: 57vw;
 }
 
 #presentationC{
@@ -700,7 +699,7 @@ body {
     position: relative;
     max-width: 45vw;
     left: 25vw;
-    top: -16vw
+    top: -13vw
 }
 #nbrPrestCr{
     text-align: center;

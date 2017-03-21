@@ -908,14 +908,17 @@ function doStuff(table){
             var newprenomc = document.createElement('p');
             newprenomc.id="prenomC";
             newprenomc.innerText=donneeCand["Prenom"];
+            newprenomc.innerText = newprenomc.innerText.toLowerCase();
             sectinvi.appendChild(newprenomc);
             var newnomc = document.createElement('p');
             newnomc.id="NomC";
             newnomc.innerText=donneeCand["Nom"];
+            newnomc.innerText = newnomc.innerText.toLowerCase();
             sectinvi.appendChild(newnomc);
             var newetiquettec = document.createElement('p');
             newetiquettec.id="EtiquetteC";
             newetiquettec.innerText=donneeCand["Etiquette"];
+            newetiquettec.innerText=newetiquettec.innerText.toLowerCase();
             newetiquettec.style.color=colPartis[donneeCand["Etiquette"]]
             sectinvi.appendChild(newetiquettec);
             var newagec = document.createElement('p');
