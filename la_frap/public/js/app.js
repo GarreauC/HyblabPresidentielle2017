@@ -38,6 +38,8 @@ var links_vendee = list_vendee.querySelectorAll('.list_node');
 var paths_vendee1 = map_vendee.querySelectorAll('.land1');
 var links_vendee1 = list_vendee.querySelectorAll('.list_node1');
 
+var list_ville = document.querySelectorAll(".liste_ville");
+
 //polyfill du foreach
 if(NodeList.prototype.forEach === undefined){
     NodeList.prototype.forEach = function(callback){
@@ -82,9 +84,13 @@ var activeArea =function(id){
     list_vendee.querySelectorAll('.is-active').forEach(function(item){
         item.classList.remove('is-active');
     })
+    list_ville.forEach(function(liste){
+        liste.style.display="none";
+    })
     if(id !== undefined){
         document.querySelector('#map_'+ id).classList.add('is-active');
         document.querySelector('#list_'+ id).classList.add('is-active');
+        document.querySelector('#lville_'+id).style.display="block";
     }
 }
 
@@ -95,18 +101,6 @@ paths_region.forEach(function(path){
     });
 })
 links_region.forEach(function(link){
-    link.addEventListener('mouseenter', function(e){
-        var id = this.id.replace("list_", '');
-        activeArea(id);
-    });
-})
-paths_la.forEach(function(path){
-    path.addEventListener('mouseenter', function(e){
-        var id = this.id.replace("map_", '');
-        activeArea(id);
-    });
-})
-links_la.forEach(function(link){
     link.addEventListener('mouseenter', function(e){
         var id = this.id.replace("list_", '');
         activeArea(id);
@@ -131,6 +125,18 @@ paths_sarthe.forEach(function(path){
     });
 })
 links_sarthe.forEach(function(link){
+    link.addEventListener('mouseenter', function(e){
+        var id = this.id.replace("list_", '');
+        activeArea(id);
+    });
+})
+paths_la.forEach(function(path){
+    path.addEventListener('mouseenter', function(e){
+        var id = this.id.replace("map_", '');
+        activeArea(id);
+    });
+})
+links_la.forEach(function(link){
     link.addEventListener('mouseenter', function(e){
         var id = this.id.replace("list_", '');
         activeArea(id);
@@ -169,6 +175,7 @@ paths_vendee1.forEach(function(path){
         document.querySelector('#map_'+ id2).classList.add('is-active');
         document.querySelector('#map_'+ id3).classList.add('is-active');
         document.querySelector('#list_853').classList.add('is-active');
+        document.querySelector('#lville_853').style.display="block";
     })
 })
 links_vendee1.forEach(function(link){
@@ -180,11 +187,20 @@ links_vendee1.forEach(function(link){
         document.querySelector('#map_'+ id2).classList.add('is-active');
         document.querySelector('#map_'+ id3).classList.add('is-active');
         document.querySelector('#list_853').classList.add('is-active');
+        document.querySelector('#lville_853').style.display="block";
         paths_vendee.forEach(function(pathspe){
             pathspe.classList.remove('is-active');
+            document.querySelector('#lville_851').style.display="none";
+            document.querySelector('#lville_852').style.display="none";
+            document.querySelector('#lville_854').style.display="none";
+            document.querySelector('#lville_855').style.display="none";
         })
         links_vendee.forEach(function(linkspe){
             linkspe.classList.remove('is-active');
+            document.querySelector('#lville_851').style.display="none";
+            document.querySelector('#lville_852').style.display="none";
+            document.querySelector('#lville_854').style.display="none";
+            document.querySelector('#lville_855').style.display="none";
         })
     })
 })
