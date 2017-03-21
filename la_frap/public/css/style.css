@@ -731,3 +731,58 @@ body {
 }
 
 
+.img_rec_may{
+	position: relative;
+	top: -45vw;
+	left: 5vw;
+}	
+.text_ville_may{
+	position: relative;
+	top: -49vw;
+	left: 9vw;
+	font-weight: bold;
+}
+.img_rec_sa{
+	position: relative;
+	top: -50vw;
+	left: 4vw;
+}	
+.text_ville_sa{
+	position: relative;
+	top: -54vw;
+	left: 8vw;
+	font-weight: bold;
+}
+.img_rec_la{
+	position: relative;
+	top: -58vw;
+	left: 6vw;
+}	
+.text_ville_la{
+	position: relative;
+	top: -61.5vw;
+	left: 10vw;
+	font-weight: bold;
+}
+.img_rec_mel{
+	position: relative;
+	top: -53vw;
+	left: 6vw;
+}	
+.text_ville_mel{
+	position: relative;
+	top: -57vw;
+	left: 10vw;
+	font-weight: bold;
+}
+.img_rec_ven{
+	position: relative;
+	top: -50vw;
+	left: 6vw;
+}	
+.text_ville_ven{
+	position: relative;
+	top: -54vw;
+	left: 10vw;
+	font-weight: bold;
+}
