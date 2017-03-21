@@ -730,8 +730,14 @@ function doStuff(table){
             var donneeCand = table.data[id];
             var newimgc = document.createElement('img');
             newimgc.id="imgC";
-            newimgc.src=donneeCand["Img_cand"];
             newimgc.style.borderColor = colPartis[donneeCand["Etiquette"]];
+            if(donneeCand["Img_cand"]!=""){
+                newimgc.src=donneeCand["Img_cand"];
+            }else{
+                var sexe = donneeCand["Sexe"];
+                newimgc.src="img/Avatar"+sexe+".png";
+
+            }
             sectinvi.appendChild(newimgc);
             var newprenomc = document.createElement('p');
             newprenomc.id="prenomC";
@@ -754,7 +760,7 @@ function doStuff(table){
             if(donneeCand["Site_perso"] != ""){
                 var newurlc = document.createElement('a');
                 newurlc.id="urlC";
-                newurlc.src=donneeCand["Site_perso"];
+                newurlc.href=donneeCand["Site_perso"];
                 newurlc.innerText=donneeCand["Site_perso"];
                 sectinvi.appendChild(newurlc);
             }

@@ -650,6 +650,7 @@ body {
     font-size: 1.5vw;
     text-transform: lowercase;
     font-weight: bold;
+    max-width: 20vw;
 }
 #NomC::first-letter {
     text-transform: capitalize;
@@ -673,6 +674,7 @@ body {
     top : -12.3vw;
     min-height: 1.5vw;
     font-size: 1.5vw;
+    max-width: 15vw;
 }
 
 
