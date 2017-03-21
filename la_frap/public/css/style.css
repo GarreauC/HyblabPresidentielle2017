@@ -417,11 +417,11 @@ body {
   }
 
 .annee{
-	padding-top: 0.5vw;
+	/*padding-top: 0.5vw;*/
 	color: white;
 	display: inline-block;
 	text-align: center;
-	line-height: 1.5vw;
+	line-height: 2vw;
 	font-size: 1.3vw;
 	font-weight: bold;
   	border-radius: 4px;
@@ -543,6 +543,7 @@ body {
   	width: 2vw;
   	line-height: 2vw;
   	font-size: 0.3vw;
+
     
     
   }
@@ -551,7 +552,7 @@ body {
       text-align: center;
       text-transform: capitalize; 
       margin-top: 1vw;
-      margin-bottom: 1vw;
+      margin-bottom: 1.5vw;
   }
 
 
