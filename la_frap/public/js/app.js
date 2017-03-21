@@ -228,6 +228,7 @@ function doStuff(table){
         if(i<22){
             if(i<8){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[0];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -247,6 +248,7 @@ function doStuff(table){
             }
             if(7<i && i<15){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","position:  absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[0];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -266,6 +268,7 @@ function doStuff(table){
             }
             if(14<i && i<22){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","position:  absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[0];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -287,6 +290,7 @@ function doStuff(table){
         if(21<i && i<56){
             if(i<29){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","position:  absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -306,6 +310,7 @@ function doStuff(table){
             }
             if(28<i && i<36){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","position:  absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -325,6 +330,7 @@ function doStuff(table){
             }
             if(35<i && i<43){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","position:  absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -344,6 +350,7 @@ function doStuff(table){
             }
             if(42<i && i<50){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -363,6 +370,7 @@ function doStuff(table){
             }
             if(49<i && i<57){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -384,6 +392,7 @@ function doStuff(table){
         if(56<i && i<127){
             if(i<64){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -403,6 +412,7 @@ function doStuff(table){
             }
             if(63<i && i<71){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -422,6 +432,7 @@ function doStuff(table){
             }
             if(70<i && i<78){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -441,6 +452,7 @@ function doStuff(table){
             }
             if(77<i && i<85){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -460,6 +472,7 @@ function doStuff(table){
             }
             if(84<i && i<92){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -479,6 +492,7 @@ function doStuff(table){
             }
             if(91<i && i<99){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[5]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -498,6 +512,7 @@ function doStuff(table){
             }
             if(98<i && i<106){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[6]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -517,6 +532,7 @@ function doStuff(table){
             }
             if(105<i && i<113){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[7]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -536,6 +552,7 @@ function doStuff(table){
             }
             if(112<i && i<120){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[8]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -555,6 +572,7 @@ function doStuff(table){
             }
             if(119<i && i<127){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[9]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -576,6 +594,7 @@ function doStuff(table){
         if(126<i && i<176){
             if(i<134){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -595,6 +614,7 @@ function doStuff(table){
             }
             if(133<i && i<141){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -614,6 +634,7 @@ function doStuff(table){
             }
             if(140<i && i<148){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -633,6 +654,7 @@ function doStuff(table){
             }
             if(147<i && i<155){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -652,6 +674,7 @@ function doStuff(table){
             }
             if(154<i && i<162){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -671,6 +694,7 @@ function doStuff(table){
             }
             if(161<i && i<169){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[5]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -690,6 +714,7 @@ function doStuff(table){
             }
             if(168<i && i<176){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[6]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -711,6 +736,7 @@ function doStuff(table){
         if(175<i && i<211){
             if(i<183){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -730,6 +756,7 @@ function doStuff(table){
             }
             if(182<i && i<190){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -749,6 +776,7 @@ function doStuff(table){
             }
             if(189<i && i<197){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -768,6 +796,7 @@ function doStuff(table){
             }
             if(196<i && i<204){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -787,6 +816,7 @@ function doStuff(table){
             }
             if(203<i && i<211){
                 var elem = document.querySelector('#sect_cand_'+i);
+                elem.setAttribute("style","display:  inline-block;position: absolute;top: 30%;height: 17%;width: 14.3%;")
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
