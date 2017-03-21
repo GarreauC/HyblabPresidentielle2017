@@ -240,7 +240,7 @@ body {
     width: 55em !important;
     height: 12em !important;
     position: relative;
-  	top: -11.5vw;
+  	top: -10vw;
 }
 
 .fil_dar{
@@ -536,52 +536,24 @@ body {
 
 
 .rond{
- 	display: inline-block;
+ 	
  	background-color: #cccccc;
-  	/*border: 5px black solid;*/
   	border-radius: 50vw;
  	height: 2vw;
   	width: 2vw;
   	line-height: 2vw;
-  	text-align: center;
-  	display: inline-block;
   	font-size: 0.3vw;
-    float: left;
-  }
-  .cand{
-      
-  }
-/*
-  .rond.rond4{
-  	margin-left: 15vw;
-  	margin-top: 1vw;
+    
+    
   }
 
- .rond.rond7{
-  	margin-left: 15vw;
-  	margin-top: 1vw;
+  .cand{   
+      text-align: center;
+      text-transform: capitalize; 
+      margin-top: 1vw;
+      margin-bottom: 1vw;
   }
 
-  .rond.rond8{
-  	margin-left: 15vw;
-  	margin-top: 1vw;
-  }
-
-   .rond.rond10{
-  	margin-left: 12vw;
-  	margin-top: 1vw;
-  }
-
-  .rond.rond12{
-  	margin-left: 9vw;
-  	margin-top: 1vw;
-  }
-
-  .rond.rond14{
-  	margin-left: 8vw;
-  	margin-top: 1vw;
-  }
-*/
 
 .b_gauche{
   	border: 0.2vw #f03134 solid;
@@ -711,14 +683,14 @@ body {
 
 #urlC{
     position: relative;
-    top: -17vw;
+    top: -15vw;
     left: 37vw;
 }
 
 #presentationC{
     max-width: 45vw;
     position: relative;
-    top: -16vw;
+    top: -14vw;
     left: 25vw;
     text-align: left;
 }
