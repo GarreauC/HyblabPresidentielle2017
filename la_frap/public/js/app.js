@@ -955,6 +955,17 @@ function doStuff(table){
             newpresepartc.id="presentationParti";
             newpresepartc.innerText=donneeCand["Phrase_pres_parti"];
             sectinvi.appendChild(newpresepartc);
+            if(donneeCand["PodCast"] != ""){
+                var newleg = document.createElement('p');
+                newleg.id="legC";
+                newleg.innerText="Interview de "+donneeCand["Prenom"]+" "+donneeCand["Nom"]+" : ";
+                sectinvi.appendChild(newleg);
+                var newaud = document.createElement('audio');
+                newaud.id="podC";
+                newaud.src="Son/"+donneeCand["PodCast"];
+                newaud.controls="controls";
+                sectinvi.appendChild(newaud);
+            }
             var newnbpresc = document.createElement('p');
             newnbpresc.id="nbrPrestCr";
             var calcpres = donneeCand["Nombre_presentation_C1"]+donneeCand["Nombre_presentation_C2"]+donneeCand["Nombre_presentation_C3"]+donneeCand["Nombre_presentation_C4"]+donneeCand["Nombre_presentation_C5"]+donneeCand["Nombre_presentation_C6"]+donneeCand["Nombre_presentation_C7"]+donneeCand["Nombre_presentation_C8"]+donneeCand["Nombre_presentation_C9"]+donneeCand["Nombre_presentation_C10"];
@@ -990,6 +1001,10 @@ function doStuff(table){
             }
             if(document.querySelector("#facebookC")!=null){
                 parentclose.removeChild(document.querySelector("#facebookC"));
+            }
+            if(document.querySelector("#podC")!=null){
+                parentclose.removeChild(document.querySelector("#podC"));
+                parentclose.removeChild(document.querySelector("#legC"));
             }
             parentclose.removeChild(document.querySelector("#presentationC"));
             parentclose.removeChild(document.querySelector("#presentationParti"));

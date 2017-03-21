@@ -729,7 +729,18 @@ body {
     font-weight: bolder;
     font-size: 5vw;
 }
-
+#podC{
+	position: relative;
+	top: -13.7vw;
+	left:50vw;
+}
+#legC{
+	position: relative;
+	top: -11vw;
+	left:25vw;
+	font-size: 1.2vw;
+	font-weight: bold;
+}
 
 .img_rec_may{
 	position: relative;
