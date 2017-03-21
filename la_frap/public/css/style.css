@@ -536,7 +536,7 @@ body {
 
 
 .rond{
- 	display: block;
+ 	display: inline-block;
  	background-color: #cccccc;
   	/*border: 5px black solid;*/
   	border-radius: 50vw;
@@ -546,11 +546,10 @@ body {
   	text-align: center;
   	display: inline-block;
   	font-size: 0.3vw;
-  	position: relative;
-  	top: -8.5vw;
+    float: left;
   }
   .cand{
-
+      
   }
 /*
   .rond.rond4{
@@ -758,4 +757,5 @@ body {
     font-weight: bolder;
     font-size: 5vw;
 }
+
 
