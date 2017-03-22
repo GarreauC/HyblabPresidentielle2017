@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr"> 
   <head>
-	<!-- Il est obligatoire de préciser un encodage de caractères et un titre pour la page -->
-	<meta charset="utf-8">
+  <!-- Il est obligatoire de préciser un encodage de caractères et un titre pour la page -->
+  <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="fullPage.js/jquery.fullPage.css" />
 
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-	<title>Hyblab 2016 : Team des Frapés</title>
-		
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
+  <title>Hyblab 2016 : Team des Frapés</title>
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 
-	<!-- Those polyfills are required so that old browsers support fetch mecanism -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" ></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js"></script>
+  <!-- Those polyfills are required so that old browsers support fetch mecanism -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js"></script>
 
-	<!-- Fullpage.js-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="fullPage.js/jquery.fullPage.js"></script>
+  <!-- Fullpage.js-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="fullPage.js/jquery.fullPage.js"></script>
 
 <!-- Chart.js-->
   <script scr="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
@@ -33,44 +33,44 @@
 
   <script src="PapaParse/papaparse.js"></script>
 
-	<!-- Pour charger le fullpage.js -->
-	<script type="text/javascript">
-	$(document).ready(function() {
-	  $('#fullpage').fullpage({
-		anchors: ['c_region', 'c_mayenne', 'c_sarthe', 'c_la', 'c_mel', 'c_vendee', 'c1_mayenne', 'c2_mayenne', 'c3_mayenne', 'c1_sarthe', 'c2_sarthe', 'c3_sarthe', 'c4_sarthe', 'c5_sarthe', 'c1_la', 'c2_la', 'c3_la', 'c4_la', 'c5_la', 'c6_la', 'c7_la', 'c8_la', 'c9_la', 'c10_la', 'c1_mel', 'c2_mel', 'c3_mel', 'c4_mel', 'c5_mel', 'c6_mel', 'c7_mel', 'c1_vendee', 'c2_vendee', 'c3_vendee', 'c4_vendee','c5_vendee'],
-		menu: '#menu',
-		scrollingSpeed: 0,
+  <!-- Pour charger le fullpage.js -->
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+    anchors: ['c_region', 'c_mayenne', 'c_sarthe', 'c_la', 'c_mel', 'c_vendee', 'c1_mayenne', 'c2_mayenne', 'c3_mayenne', 'c1_sarthe', 'c2_sarthe', 'c3_sarthe', 'c4_sarthe', 'c5_sarthe', 'c1_la', 'c2_la', 'c3_la', 'c4_la', 'c5_la', 'c6_la', 'c7_la', 'c8_la', 'c9_la', 'c10_la', 'c1_mel', 'c2_mel', 'c3_mel', 'c4_mel', 'c5_mel', 'c6_mel', 'c7_mel', 'c1_vendee', 'c2_vendee', 'c3_vendee', 'c4_vendee','c5_vendee'],
+    menu: '#menu',
+    scrollingSpeed: 0,
 
     //controlArrows: false, //scroll fleche
     //loop horizontal: false, 
-	  }); 
-	});
+    }); 
+  });
   </script>
 
   </head>
   <body>
-	<!-- Ce conteneur est la seule balise div que l'on s'autorise pour effectuer la mise en page du site -->
-	<!-- On pourrait bien sûr en ajouter d'autres pour se faciliter la mise en page -->
-	<!-- Mais on va s'efforce de respecter et brouiller le moins possible la structure logique du contenu -->
+  <!-- Ce conteneur est la seule balise div que l'on s'autorise pour effectuer la mise en page du site -->
+  <!-- On pourrait bien sûr en ajouter d'autres pour se faciliter la mise en page -->
+  <!-- Mais on va s'efforce de respecter et brouiller le moins possible la structure logique du contenu -->
 
-	<div id="fullpage"> <!-- necessaire pour le fp.js-->
+  <div id="fullpage"> <!-- necessaire pour le fp.js-->
 
-		<!-- l'entête de la page: titre, barre de recherche 
+    <!-- l'entête de la page: titre, barre de recherche 
 
-		<section class="section" id="section0"> 
-			
-			<img src="img/logo_hyblab.png" alt="logo hyblab"/>
+    <section class="section" id="section0"> 
+      
+      <img src="img/logo_hyblab.png" alt="logo hyblab"/>
 
-			<h1>Hyblab Datajournalism 2017</h1>
+      <h1>Hyblab Datajournalism 2017</h1>
 
-			<p>Replace this content by your web app !</p>
-		
-			<p>Here is some data from a json file : <span id="data"></span></p>
-			<p>Test parcours json : <span id="test"></span> </p>
+      <p>Replace this content by your web app !</p>
+    
+      <p>Here is some data from a json file : <span id="data"></span></p>
+      <p>Test parcours json : <span id="test"></span> </p>
 
       <a href="#c5_vendee">test</a>-->
-		 	
-		</section>
+      
+    </section>
     <!--Section Carte-->
     <section class="section" id="section1.1"> 
       <section class ="entete">
@@ -167,7 +167,7 @@
         </ul>
       </div>
     </section>
-		<section class="section" id="section1"> 
+    <section class="section" id="section1"> 
       <section class ="entete">
         <div class="carre"></div>
         <section class="carre2">
@@ -199,7 +199,7 @@
         <p class="exp2">Sélectionnez </br>  votre circonscription.</p>
       </section>
       <!--<h1 class="titre_section">Circonscriptions de la Mayenne</h1>-->
-			 <div id="map_mayenne">
+       <div id="map_mayenne">
          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 800 600" style="enable-background:new 0 0 800 600;" xml:space="preserve">
         <g >
@@ -265,7 +265,7 @@
           <img class="img_rec_may" src="img/recherche.png"> 
           <p class="text_ville_may"> Ambrières-les-Vallées, Chailland, Couptrain, Ernée,</br> Gorron, Le Horps, Landivy, Lassay-les-Châteaux,</br> Loiron, Mayenne-Est, Mayenne-Ouest</p>        
        </section>
-		</section>
+    </section>
 
     <section class="section" id="section2"> 
       <section class ="entete">
@@ -7690,11 +7690,11 @@
     </section>
 
 
-	
-	<!-- Notre pied de page -->
-	<footer>
-	  <p>Copyright Hyblab 2017</p></fooa>
-	</footer>
-	</div>
+  
+  <!-- Notre pied de page -->
+  <footer>
+    <p>Copyright Hyblab 2017</p></fooa>
+  </footer>
+  </div>
   </body>
 </html>

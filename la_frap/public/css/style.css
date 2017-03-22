@@ -216,13 +216,8 @@ body {
 .exp1_s{
 	font-family: : 'Roboto';
 	position: relative;
-<<<<<<< HEAD
 	left: 8vw;
-	top: -22vw;
-=======
-	left: 10vw;
 	top: -21vw;
->>>>>>> dbc83f0b02f64c533bb288522546c2f906df323f
 	color: #00a9ff;
 	font-size: 1.1vw;
 }
@@ -230,38 +225,23 @@ body {
 	font-family: : 'Roboto';
 	position: relative;
 	color: #00a9ff;
-<<<<<<< HEAD
 	left: 8vw;
-	top: -25vw;
-=======
-	left: 10vw;
 	top: -24vw;
->>>>>>> dbc83f0b02f64c533bb288522546c2f906df323f
 	font-size: 1.1vw;
 }
 .exp3_s{
 	font-family: : 'Roboto';
 	position: relative;
 	color: #00a9ff;
-<<<<<<< HEAD
 	left: 8vw;
-	top: -25vw;
-=======
-	left: 10vw;
 	top: -24vw;
->>>>>>> dbc83f0b02f64c533bb288522546c2f906df323f
 	font-size: 1.1vw;
 }
 .img_excl_s{
 	width: 2vw;
 	position: relative;
-<<<<<<< HEAD
 	left: 4.5vw;
-	top: -21.2vw;
-=======
-	left: 6.5vw;
 	top: -20.2vw;
->>>>>>> dbc83f0b02f64c533bb288522546c2f906df323f
 }
 
 
