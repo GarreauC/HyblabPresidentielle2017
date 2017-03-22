@@ -216,7 +216,7 @@ body {
 .exp1_s{
 	font-family: : 'Roboto';
 	position: relative;
-	left: 10vw;
+	left: 8vw;
 	top: -22vw;
 	color: #00a9ff;
 	font-size: 1.1vw;
@@ -225,7 +225,7 @@ body {
 	font-family: : 'Roboto';
 	position: relative;
 	color: #00a9ff;
-	left: 10vw;
+	left: 8vw;
 	top: -25vw;
 	font-size: 1.1vw;
 }
@@ -233,14 +233,14 @@ body {
 	font-family: : 'Roboto';
 	position: relative;
 	color: #00a9ff;
-	left: 10vw;
+	left: 8vw;
 	top: -25vw;
 	font-size: 1.1vw;
 }
 .img_excl_s{
 	width: 2vw;
 	position: relative;
-	left: 6.5vw;
+	left: 4.5vw;
 	top: -21.2vw;
 }
 
