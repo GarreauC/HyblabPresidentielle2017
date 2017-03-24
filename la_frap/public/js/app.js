@@ -2139,7 +2139,6 @@ function doStuff(table){
                 
                 var idChart = "Chart_"+dep[3]+"_"+circ[3][1]+"_"+annee[curseur_annee];
                 console.log(idChart)
-                
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
@@ -2226,7 +2225,6 @@ function doStuff(table){
                 
                 
                 var idChart = "Chart_"+dep[3]+"_"+circ[4][1]+"_"+annee[curseur_annee];
-                console.log(idChart)
                 
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
@@ -2314,7 +2312,6 @@ function doStuff(table){
                 
                 
                 var idChart = "Chart_"+dep[3]+"_"+circ[5][1]+"_"+annee[curseur_annee];
-                console.log(idChart)
                 
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
@@ -2401,7 +2398,6 @@ function doStuff(table){
                 
                 
                 var idChart = "Chart_"+dep[3]+"_"+circ[6][1]+"_"+annee[curseur_annee];
-                console.log(idChart)
                 
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
@@ -2490,7 +2486,6 @@ function doStuff(table){
                 
                 
                 var idChart = "Chart_"+dep[4]+"_"+circ[0][1]+"_"+annee[curseur_annee];
-                console.log(idChart)
                 
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
@@ -2578,7 +2573,6 @@ function doStuff(table){
                 
                 
                 var idChart = "Chart_"+dep[4]+"_"+circ[1][1]+"_"+annee[curseur_annee];
-                console.log(idChart)
                 
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
@@ -2666,7 +2660,6 @@ function doStuff(table){
                 
                 
                 var idChart = "Chart_"+dep[4]+"_"+circ[2][1]+"_"+annee[curseur_annee];
-                console.log(idChart)
                 
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
@@ -2754,7 +2747,6 @@ function doStuff(table){
                 
                 
                 var idChart = "Chart_"+dep[4]+"_"+circ[3][1]+"_"+annee[curseur_annee];
-                console.log(idChart)
                 
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
@@ -2842,7 +2834,6 @@ function doStuff(table){
                 
                 
                 var idChart = "Chart_"+dep[4]+"_"+circ[4][1]+"_"+annee[curseur_annee];
-                console.log(idChart)
                 
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
