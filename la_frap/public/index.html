@@ -29,7 +29,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
 
   <script type="text/javascript" src ="js/app.js" defer></script>
-  <script type="text/javascript" src ="js/DrawCharts.js" defer></script>
+  <!--script type="text/javascript" src ="js/DrawCharts.js" defer></script> -->
 
   <script src="PapaParse/papaparse.js"></script>
 
@@ -40,8 +40,9 @@
     anchors: ['c_region', 'c_mayenne', 'c_sarthe', 'c_la', 'c_mel', 'c_vendee', 'c1_mayenne', 'c2_mayenne', 'c3_mayenne', 'c1_sarthe', 'c2_sarthe', 'c3_sarthe', 'c4_sarthe', 'c5_sarthe', 'c1_la', 'c2_la', 'c3_la', 'c4_la', 'c5_la', 'c6_la', 'c7_la', 'c8_la', 'c9_la', 'c10_la', 'c1_mel', 'c2_mel', 'c3_mel', 'c4_mel', 'c5_mel', 'c6_mel', 'c7_mel', 'c1_vendee', 'c2_vendee', 'c3_vendee', 'c4_vendee','c5_vendee'],
     menu: '#menu',
     scrollingSpeed: 0,
-
-    //controlArrows: false, //scroll fleche
+    keyboardScrolling: false,
+    controlArrows: false, //scroll fleche
+    interlockedSlides: true,
     //loop horizontal: false, 
     }); 
   });

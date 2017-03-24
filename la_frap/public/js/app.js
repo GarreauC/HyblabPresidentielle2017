@@ -234,8 +234,14 @@ function doStuff(table){
     var dep = [53,72,44,49,85];
     var circ= ["C1", "C2","C3","C4","C5","C6","C7","C8","C9","C10"];
     var annee =["1988", "1993", "1997", "2002", "2007", "2012", "2017"];
-    //console.log(table.data);
     for(var i=1; i<211; i++){
+
+        var datacol = [];
+        var chartdatalabels = [];
+        var chartdata = [];
+        var colors = [];
+        var nbelemt = 0;
+
         if (i%7 === 0){
             var curseur_annee = 6
         }else{
@@ -243,11 +249,24 @@ function doStuff(table){
         }
         if(i<22){
             if(i<8){
+
+
+
                 var elem = document.querySelector('#sect_cand_'+i);
                 elem.setAttribute("style","display: flex ; flex-direction: column; flex-wrap: wrap;position: absolute;top: 30%;height: 17%;width: 14.3%;align-items: center; justify-content: center;")
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[0];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -262,6 +281,63 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[0]+"_"+circ[0][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
+
+
             }
             if(7<i && i<15){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -269,6 +345,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[0];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -283,6 +369,61 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[0]+"_"+circ[1][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
+
             }
             if(14<i && i<22){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -290,6 +431,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[0];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -304,6 +455,60 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[0]+"_"+circ[2][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
             }
         }
         if(21<i && i<56){
@@ -313,6 +518,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -327,6 +542,62 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[1]+"_"+circ[0][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
+
             }
             if(28<i && i<36){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -334,6 +605,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -348,6 +629,61 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[1]+"_"+circ[1][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
+
             }
             if(35<i && i<43){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -355,6 +691,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -369,6 +715,61 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[1]+"_"+circ[2][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
             }
             if(42<i && i<50){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -376,6 +777,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -390,6 +801,61 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[1]+"_"+circ[3][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
             }
             if(49<i && i<57){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -397,6 +863,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -411,6 +887,60 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[1]+"_"+circ[4][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
             }
         }
         if(56<i && i<127){
@@ -420,6 +950,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -434,6 +974,60 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[2]+"_"+circ[0][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
             }
             if(63<i && i<71){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -441,6 +1035,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -455,6 +1059,60 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[2]+"_"+circ[1][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
             }
             if(70<i && i<78){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -462,6 +1120,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -476,6 +1144,61 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[2]+"_"+circ[2][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
             }
             if(77<i && i<85){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -483,6 +1206,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -497,6 +1230,61 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[2]+"_"+circ[3][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
             }
             if(84<i && i<92){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -504,6 +1292,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -518,6 +1316,61 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[2]+"_"+circ[4][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
             }
             if(91<i && i<99){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -525,6 +1378,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[5]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -539,6 +1402,60 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[2]+"_"+circ[5][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
             }
             if(98<i && i<106){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -546,6 +1463,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[6]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -560,6 +1487,60 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[2]+"_"+circ[6][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
             }
             if(105<i && i<113){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -567,6 +1548,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[7]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -581,6 +1572,60 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[2]+"_"+circ[7][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
             }
             if(112<i && i<120){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -588,6 +1633,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[8]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -602,6 +1657,60 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[2]+"_"+circ[8][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
             }
             if(119<i && i<127){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -609,6 +1718,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[9]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -623,6 +1742,61 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[2]+"_"+circ[9][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
             }
         }
         if(126<i && i<176){
@@ -630,8 +1804,18 @@ function doStuff(table){
                 var elem = document.querySelector('#sect_cand_'+i);
                 elem.setAttribute("style","display: flex ; flex-direction: column; flex-wrap: wrap;position: absolute;top: 30%;height: 17%;width: 14.3%;align-items: center; justify-content: center;")
                 table.data.forEach(function(item){
-                    var cirdep = circ[0]+"_"+dep[2];
+                    var cirdep = circ[0]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -646,6 +1830,60 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[3]+"_"+circ[0][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
             }
             if(133<i && i<141){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -653,6 +1891,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -667,6 +1915,60 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[3]+"_"+circ[1][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
             }
             if(140<i && i<148){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -674,6 +1976,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -688,6 +2000,62 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[3]+"_"+circ[2][1]+"_"+annee[curseur_annee];
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
+
             }
             if(147<i && i<155){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -695,6 +2063,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -709,6 +2087,63 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[3]+"_"+circ[3][1]+"_"+annee[curseur_annee];
+                console.log(idChart)
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
+
             }
             if(154<i && i<162){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -716,6 +2151,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -730,6 +2175,63 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[3]+"_"+circ[4][1]+"_"+annee[curseur_annee];
+                console.log(idChart)
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
+
             }
             if(161<i && i<169){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -737,6 +2239,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[5]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -751,6 +2263,63 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[3]+"_"+circ[5][1]+"_"+annee[curseur_annee];
+                console.log(idChart)
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
+
             }
             if(168<i && i<176){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -758,6 +2327,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[6]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -772,6 +2351,61 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[3]+"_"+circ[6][1]+"_"+annee[curseur_annee];
+                console.log(idChart)
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
             }
         }
         if(175<i && i<211){
@@ -781,6 +2415,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -795,6 +2439,63 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[4]+"_"+circ[0][1]+"_"+annee[curseur_annee];
+                console.log(idChart)
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
+
             }
             if(182<i && i<190){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -802,6 +2503,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -816,6 +2527,63 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[4]+"_"+circ[1][1]+"_"+annee[curseur_annee];
+                console.log(idChart)
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
+
             }
             if(189<i && i<197){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -823,6 +2591,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -837,6 +2615,63 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[4]+"_"+circ[2][1]+"_"+annee[curseur_annee];
+                console.log(idChart)
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
+
             }
             if(196<i && i<204){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -844,6 +2679,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -858,6 +2703,63 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[4]+"_"+circ[3][1]+"_"+annee[curseur_annee];
+                console.log(idChart)
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
+
             }
             if(203<i && i<211){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -865,6 +2767,16 @@ function doStuff(table){
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
+
+
+                        datacol[nbelemt] = [];
+                        var res = annee[curseur_annee] + "_RES";
+                        datacol[nbelemt][0]=item[res];
+                        datacol[nbelemt][1]=item["Nom"]+" "+item["Prenom"];
+                        datacol[nbelemt][2]=colPartis[item["Etiquette"]];
+                        nbelemt+=1;
+
+
                         var newElemP = document.createElement('p');
                         newElemP.id="cand_"+item["id"];
                         newElemP.innerText=item["Nom"]+" "+item["Prenom"];
@@ -879,6 +2791,63 @@ function doStuff(table){
                         elem.appendChild(newElemP);
                     }  
                 })
+
+
+                datacol.sort(function(a,b) {
+                        return b[0]-a[0]
+                    });
+
+                for (var ind=0; ind< nbelemt; ind++){
+
+                    chartdata.push(datacol[ind][0])
+                    chartdatalabels.push(datacol[ind][1])
+                    colors.push(datacol[ind][2])
+                    }
+
+                var chart = {
+                    type: "bar",
+                    data :{
+                        labels: chartdatalabels,
+                        datasets : [{
+                            label: 'Pourcentage',
+                            data: chartdata,
+                            backgroundColor: colors,
+                            borderColor: colors,
+                            borderWidth: 1
+                            }]
+                        },
+
+                    options: {
+                        scales: {
+                                    xAxes: [{
+                                        display: false,
+                                        categoryPercentage: 0.95,
+                                        barPercentage: 1.0
+                                    }]
+                                },
+                        responsive:false,
+                        maintainAspectRatio: false,
+                        animation: false,
+
+                        legend: {
+                            display: false
+                        },
+                        hover: {
+                            intersect: false,
+                        }
+                    }
+
+                };
+
+                
+                
+                var idChart = "Chart_"+dep[4]+"_"+circ[4][1]+"_"+annee[curseur_annee];
+                console.log(idChart)
+                
+                var ctx = document.getElementById(idChart).getContext('2d');
+                var myChart = new Chart(ctx, chart);
+                myChart.resize()
+
             }
         }
     }
@@ -968,12 +2937,12 @@ function doStuff(table){
             }
             var newnbpresc = document.createElement('p');
             newnbpresc.id="nbrPrestCr";
-            var calcpres = donneeCand["Nombre_presentation_C1"]+donneeCand["Nombre_presentation_C2"]+donneeCand["Nombre_presentation_C3"]+donneeCand["Nombre_presentation_C4"]+donneeCand["Nombre_presentation_C5"]+donneeCand["Nombre_presentation_C6"]+donneeCand["Nombre_presentation_C7"]+donneeCand["Nombre_presentation_C8"]+donneeCand["Nombre_presentation_C9"]+donneeCand["Nombre_presentation_C10"];
+            var calcpres = donneeCand["Nombre_presentation_1988"]+donneeCand["Nombre_presentation_1993"]+donneeCand["Nombre_presentation_1997"]+donneeCand["Nombre_presentation_2002"]+donneeCand["Nombre_presentation_2007"]+donneeCand["Nombre_presentation_2012"]+donneeCand["Nombre_presentation_2017"];
             newnbpresc.innerHTML=calcpres +"</br>Candidatures présentées";
             sectinvi.appendChild(newnbpresc);
             var newnbelec = document.createElement('p');
             newnbelec.id="nrbEluC";
-            var calcElu = donneeCand["Nombre_Elu_C1"]+donneeCand["Nombre_Elu_C2"]+donneeCand["Nombre_Elu_C3"]+donneeCand["Nombre_Elu_C4"]+donneeCand["Nombre_Elu_C5"]+donneeCand["Nombre_Elu_C6"]+donneeCand["Nombre_Elu_C7"]+donneeCand["Nombre_Elu_C8"]+donneeCand["Nombre_Elu_C9"]+donneeCand["Nombre_Elu_C10"]
+            var calcElu = donneeCand["Nombre_Elu_1988"]+donneeCand["Nombre_Elu_1993"]+donneeCand["Nombre_Elu_1997"]+donneeCand["Nombre_Elu_2002"]+donneeCand["Nombre_Elu_2007"]+donneeCand["Nombre_Elu_2012"]+donneeCand["Nombre_Elu_2017"];
             newnbelec.innerHTML=calcElu + "</br> Mandats effecués";
             sectinvi.appendChild(newnbelec);
         })
@@ -1024,7 +2993,6 @@ function parseData(file, callBack) {
             doStuff(results);
         },
         error: function( error, file){
-            console.log(error);
         }
     });
 }

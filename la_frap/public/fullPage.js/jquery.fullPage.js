@@ -91,7 +91,7 @@
     // Default options for iScroll.js used when using scrollOverflow
     var iscrollOptions = {
         scrollbars: true,
-        mouseWheel: true,
+        mouseWheel: false,
         hideScrollbars: false,
         fadeScrollbars: false,
         disableMouse: true,
@@ -346,7 +346,7 @@
                 });
             }
             else if(value){
-                setMouseWheelScrolling(true);
+                setMouseWheelScrolling(false);
                 addTouchHandler();
             }else{
                 setMouseWheelScrolling(false);
@@ -555,7 +555,7 @@
 
             setOptionsFromDOM();
             prepareDom();
-            setAllowScrolling(true);
+            setAllowScrolling(false);
             setAutoScrolling(options.autoScrolling, 'internal');
             responsive();
 
@@ -611,7 +611,7 @@
                 });
 
                 $document.on('mouseleave', options.normalScrollElements, function(){
-                    setMouseWheelScrolling(true);
+                    setMouseWheelScrolling(false);
                 });
             }
         }
@@ -2716,7 +2716,7 @@
                 case 'right': isScrollAllowed[type].right = value; break;
                 case 'all':
                     if(type == 'm'){
-                        setAllowScrolling(value);
+                        setAllowScrolling(false);
                     }else{
                         setKeyboardScrolling(value);
                     }

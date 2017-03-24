@@ -267,8 +267,8 @@ body {
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50em !important;
-    height: 14em !important;
+    width: 50vw !important;
+    height: 15vw !important;
     position: relative;
     left: 10vw;
   	top: -8.7vw;
