@@ -1792,7 +1792,7 @@ function doStuff(table){
 
                 
                 
-                var idChart = "Chart_"+dep[2]+"_"+circ[9][1]+"_"+annee[curseur_annee];
+                var idChart = "Chart_"+dep[2]+"_"+circ[9][1]+circ[9][2]+"_"+annee[curseur_annee];
                 
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);

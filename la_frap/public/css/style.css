@@ -272,7 +272,7 @@ body {
     position: relative;
     left: 10vw;
   	top: -8.7vw;
-  	z-index: 1;
+  	z-index: 9;
 }
 
 .fil_dar{
