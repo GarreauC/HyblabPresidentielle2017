@@ -584,6 +584,7 @@ body {
   	font-size: 0.3vw;
   	position: relative;
   	top: 2vw;
+  	margin-left: 1vw;
     
     
   }
@@ -591,8 +592,11 @@ body {
 .cand{   
   text-align: center;
   text-transform: capitalize; 
-  margin-top: 1vw;
-  margin-bottom: 1.1vw;
+  margin-top: 3vw;
+
+  width: 14vw;
+  margin-left:  1vw;
+  margin-right: 2vw;
   position: relative;
   top: 1vw; 
 }
