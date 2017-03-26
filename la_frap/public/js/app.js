@@ -8,35 +8,19 @@ $.getJSON("data/couleursPartis.json", function(data){
     })
 })
 
-var region = document.querySelector("#region");
 var map_la = document.querySelector("#map_la");
 var map_mayenne = document.querySelector("#map_mayenne");
 var map_sarthe = document.querySelector("#map_sarthe");
 var map_mel = document.querySelector("#map_mel");
 var map_vendee = document.querySelector("#map_vendee");
 
-var list_region = document.querySelector('#list_region');
-var list_la = document.querySelector("#list_la");
-var list_mayenne = document.querySelector("#list_mayenne");
-var list_sarthe = document.querySelector("#list_sarthe");
-var list_mel = document.querySelector("#list_mel");
-var list_vendee = document.querySelector("#list_vendee");
 
-
-var paths_region = region.querySelectorAll('.land');
-var links_region = list_region.querySelectorAll(".list_node");
 var paths_la = map_la.querySelectorAll('.land');
-var links_la = list_la.querySelectorAll('.list_node');
 var paths_mayenne = map_mayenne.querySelectorAll('.land');
-var links_mayenne = list_mayenne.querySelectorAll('.list_node');
 var paths_sarthe = map_sarthe.querySelectorAll('.land');
-var links_sarthe = list_sarthe.querySelectorAll('.list_node');
 var paths_mel = map_mel.querySelectorAll('.land');
-var links_mel = list_mel.querySelectorAll('.list_node');
 var paths_vendee = map_vendee.querySelectorAll('.land');
-var links_vendee = list_vendee.querySelectorAll('.list_node');
 var paths_vendee1 = map_vendee.querySelectorAll('.land1');
-var links_vendee1 = list_vendee.querySelectorAll('.list_node1');
 
 var list_ville = document.querySelectorAll(".liste_ville");
 
@@ -51,37 +35,16 @@ var activeArea =function(id){
     map_la.querySelectorAll('.is-active').forEach(function(item){
         item.classList.remove('is-active');
     })
-    list_la.querySelectorAll('.is-active').forEach(function(item){
-        item.classList.remove('is-active');
-    })
-    region.querySelectorAll('.is-active').forEach(function(item){
-        item.classList.remove('is-active');
-    })
-    list_region.querySelectorAll('.is-active').forEach(function(item){
-        item.classList.remove('is-active');
-    })
     map_mayenne.querySelectorAll('.is-active').forEach(function(item){
-        item.classList.remove('is-active');
-    })
-    list_mayenne.querySelectorAll('.is-active').forEach(function(item){
         item.classList.remove('is-active');
     })
     map_sarthe.querySelectorAll('.is-active').forEach(function(item){
         item.classList.remove('is-active');
     })
-    list_sarthe.querySelectorAll('.is-active').forEach(function(item){
-        item.classList.remove('is-active');
-    })
     map_mel.querySelectorAll('.is-active').forEach(function(item){
         item.classList.remove('is-active');
     })
-    list_mel.querySelectorAll('.is-active').forEach(function(item){
-        item.classList.remove('is-active');
-    })
     map_vendee.querySelectorAll('.is-active').forEach(function(item){
-        item.classList.remove('is-active');
-    })
-    list_vendee.querySelectorAll('.is-active').forEach(function(item){
         item.classList.remove('is-active');
     })
     list_ville.forEach(function(liste){
@@ -89,32 +52,13 @@ var activeArea =function(id){
     })
     if(id !== undefined){
         document.querySelector('#map_'+ id).classList.add('is-active');
-        document.querySelector('#list_'+ id).classList.add('is-active');
         document.querySelector('#lville_'+id).style.display="block";
     }
 }
 
-paths_region.forEach(function(path){
-    path.addEventListener('mouseenter', function(e){
-        var id = this.id.replace("map_", '');
-        activeArea(id);
-    });
-})
-links_region.forEach(function(link){
-    link.addEventListener('mouseenter', function(e){
-        var id = this.id.replace("list_", '');
-        activeArea(id);
-    });
-})
 paths_mayenne.forEach(function(path){
     path.addEventListener('mouseenter', function(e){
         var id = this.id.replace("map_", '');
-        activeArea(id);
-    });
-})
-links_mayenne.forEach(function(link){
-    link.addEventListener('mouseenter', function(e){
-        var id = this.id.replace("list_", '');
         activeArea(id);
     });
 })
@@ -124,21 +68,9 @@ paths_sarthe.forEach(function(path){
         activeArea(id);
     });
 })
-links_sarthe.forEach(function(link){
-    link.addEventListener('mouseenter', function(e){
-        var id = this.id.replace("list_", '');
-        activeArea(id);
-    });
-})
 paths_la.forEach(function(path){
     path.addEventListener('mouseenter', function(e){
         var id = this.id.replace("map_", '');
-        activeArea(id);
-    });
-})
-links_la.forEach(function(link){
-    link.addEventListener('mouseenter', function(e){
-        var id = this.id.replace("list_", '');
         activeArea(id);
     });
 })
@@ -148,21 +80,9 @@ paths_mel.forEach(function(path){
         activeArea(id);
     });
 })
-links_mel.forEach(function(link){
-    link.addEventListener('mouseenter', function(e){
-        var id = this.id.replace("list_", '');
-        activeArea(id);
-    });
-})
 paths_vendee.forEach(function(path){
     path.addEventListener('mouseenter', function(e){
         var id = this.id.replace("map_", '');
-        activeArea(id);
-    })
-})
-links_vendee.forEach(function(link){
-    link.addEventListener('mouseenter', function(e){
-        var id = this.id.replace("list_", '');
         activeArea(id);
     })
 })
@@ -174,42 +94,12 @@ paths_vendee1.forEach(function(path){
         document.querySelector('#map_'+ id1).classList.add('is-active');
         document.querySelector('#map_'+ id2).classList.add('is-active');
         document.querySelector('#map_'+ id3).classList.add('is-active');
-        document.querySelector('#list_853').classList.add('is-active');
         document.querySelector('#lville_853').style.display="block";
-    })
-})
-links_vendee1.forEach(function(link){
-    link.addEventListener('mouseenter', function(e){
-        var id1 = document.getElementById("map_8531").id.replace("map_", '');
-        var id2 = document.getElementById("map_8532").id.replace("map_", '');
-        var id3 = document.getElementById("map_8533").id.replace("map_", '');
-        document.querySelector('#map_'+ id1).classList.add('is-active');
-        document.querySelector('#map_'+ id2).classList.add('is-active');
-        document.querySelector('#map_'+ id3).classList.add('is-active');
-        document.querySelector('#list_853').classList.add('is-active');
-        document.querySelector('#lville_853').style.display="block";
-        paths_vendee.forEach(function(pathspe){
-            pathspe.classList.remove('is-active');
-            document.querySelector('#lville_851').style.display="none";
-            document.querySelector('#lville_852').style.display="none";
-            document.querySelector('#lville_854').style.display="none";
-            document.querySelector('#lville_855').style.display="none";
-        })
-        links_vendee.forEach(function(linkspe){
-            linkspe.classList.remove('is-active');
-            document.querySelector('#lville_851').style.display="none";
-            document.querySelector('#lville_852').style.display="none";
-            document.querySelector('#lville_854').style.display="none";
-            document.querySelector('#lville_855').style.display="none";
-        })
     })
 })
 
 
 map_la.addEventListener('mouseover', function(){
-    activeArea();
-})
-region.addEventListener('mouseover', function(){
     activeArea();
 })
 map_mayenne.addEventListener('mouseover', function(){
@@ -279,6 +169,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.className="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -367,6 +263,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -453,6 +355,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -540,6 +448,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -627,6 +541,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -713,6 +633,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -799,6 +725,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -885,6 +817,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -972,6 +910,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -1057,6 +1001,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -1142,6 +1092,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -1228,6 +1184,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -1314,6 +1276,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -1400,6 +1368,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -1485,6 +1459,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -1570,6 +1550,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -1655,6 +1641,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -1740,6 +1732,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -1828,6 +1826,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -1913,6 +1917,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -1998,6 +2008,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -2085,6 +2101,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -2172,6 +2194,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -2259,6 +2287,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -2346,6 +2380,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -2433,6 +2473,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -2520,6 +2566,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -2607,6 +2659,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -2694,6 +2752,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -2781,6 +2845,12 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        if(item["PodCast"] !=="" ){
+                            var newElemS =  document.createElement('img');
+                            newElemS.id="son_cand";
+                            newElemS.src="img/poadcast.png"
+                            elem.appendChild(newElemS);
+                        }
                     }  
                 })
 
@@ -2842,6 +2912,10 @@ function doStuff(table){
             }
         }
     }
+
+
+
+
     var totcand = document.querySelectorAll(".cand");
 
     totcand.forEach(function(cand){
@@ -2853,10 +2927,14 @@ function doStuff(table){
             var sectinvi = document.querySelector("#sect_invi_"+idparent);
             sectinvi.style.display = "block";
             sectvisi.style.display="none";
+            var decor = document.createElement('section');
+            decor.id = "carre_gris";
+            sectinvi.appendChild(decor);
             var donneeCand = table.data[id];
+            console.log(donneeCand);
             var newimgc = document.createElement('img');
             newimgc.id="imgC";
-            newimgc.style.borderColor = colPartis[donneeCand["Etiquette"]];
+            //newimgc.style.borderColor = colPartis[donneeCand["Etiquette"]];
             if(donneeCand["Img_cand"]!=""){
                 newimgc.src="img/photos-candidats/"+donneeCand["Img_cand"];
             }else{
@@ -2865,16 +2943,16 @@ function doStuff(table){
 
             }
             sectinvi.appendChild(newimgc);
-            var newprenomc = document.createElement('p');
-            newprenomc.id="prenomC";
-            newprenomc.innerText=donneeCand["Prenom"];
-            newprenomc.innerText = newprenomc.innerText.toLowerCase();
-            sectinvi.appendChild(newprenomc);
             var newnomc = document.createElement('p');
             newnomc.id="NomC";
             newnomc.innerText=donneeCand["Nom"];
             newnomc.innerText = newnomc.innerText.toLowerCase();
             sectinvi.appendChild(newnomc);
+            var newprenomc = document.createElement('p');
+            newprenomc.id="prenomC";
+            newprenomc.innerText=donneeCand["Prenom"];
+            newprenomc.innerText = newprenomc.innerText.toLowerCase();
+            sectinvi.appendChild(newprenomc);
             var newetiquettec = document.createElement('p');
             newetiquettec.id="EtiquetteC";
             newetiquettec.innerText=donneeCand["Etiquette"];
@@ -2886,27 +2964,112 @@ function doStuff(table){
             newagec.innerText=donneeCand["Age"];
             sectinvi.appendChild(newagec);
             
-            if(donneeCand["Site_perso"] != ""){
-                var newurlc = document.createElement('a');
-                newurlc.id="urlC";
-                newurlc.href=donneeCand["Site_perso"];
-                newurlc.innerText=donneeCand["Site_perso"];
-                sectinvi.appendChild(newurlc);
+            var newnbpresc = document.createElement('p');
+            newnbpresc.id="nbrPrestCr";
+            var calcpres = donneeCand["Nombre_presentation_1988"]+donneeCand["Nombre_presentation_1993"]+donneeCand["Nombre_presentation_1997"]+donneeCand["Nombre_presentation_2002"]+donneeCand["Nombre_presentation_2007"]+donneeCand["Nombre_presentation_2012"]+donneeCand["Nombre_presentation_2017"];
+            newnbpresc.innerText=calcpres +" Candidatures présentées";
+            sectinvi.appendChild(newnbpresc);
+            var newsep = document.createElement("section");
+            newsep.id ="newsepC";
+            sectinvi.appendChild(newsep);
+            var newnbelec = document.createElement('p');
+            newnbelec.id="nrbEluC";
+            var calcElu = donneeCand["Nombre_Elu_1988"]+donneeCand["Nombre_Elu_1993"]+donneeCand["Nombre_Elu_1997"]+donneeCand["Nombre_Elu_2002"]+donneeCand["Nombre_Elu_2007"]+donneeCand["Nombre_Elu_2012"]+donneeCand["Nombre_Elu_2017"];
+            newnbelec.innerText=calcElu + " Mandats effectués";
+            sectinvi.appendChild(newnbelec);
+
+            var list_pres = document.createElement('ul');
+            list_pres.id = "list_presC";
+            if(donneeCand["Nombre_presentation_1988"] === 1){
+                var li1 = document.createElement("li");
+                li1.innerText = "1988: "+donneeCand["1988"];
+                li1.id = "li1";
+                list_pres.appendChild(li1);
             }
-            if(donneeCand["Twitter"] != ""){
-                var newtwitterc = document.createElement('a');
-                newtwitterc.id="twitterC";
-                newtwitterc.href=donneeCand["Twitter"];
-                newtwitterc.innerHTML="<img src='img/twitter.png'>";
-                sectinvi.appendChild(newtwitterc);
+            if(donneeCand["Nombre_presentation_1993"] === 1){
+                var li2 = document.createElement("li");
+                li2.innerText = "En 1993: "+donneeCand["1993"];
+                li2.id = "li2";
+                list_pres.appendChild(li2);
             }
-            if(donneeCand["Facebook"] != ""){
-                var newfacebookc = document.createElement('a');
-                newfacebookc.id="facebookC";
-                newfacebookc.href=donneeCand["Facebook"];
-                newfacebookc.innerHTML="<img src='img/facebook.png'>";
-                sectinvi.appendChild(newfacebookc);
+            if(donneeCand["Nombre_presentation_1997"] === 1){
+                var li3 = document.createElement("li");
+                li3.innerText = "En 1997: "+donneeCand["1997"];
+                li3.id = "li3";
+                list_pres.appendChild(li3);
             }
+            if(donneeCand["Nombre_presentation_2002"] === 1){
+                var li4 = document.createElement("li");
+                li4.innerText = "En 2002: "+donneeCand["2002"];
+                li4.id = "li4";
+                list_pres.appendChild(li4);
+            }
+            if(donneeCand["Nombre_presentation_2007"] === 1){
+                var li5 = document.createElement("li");
+                li5.innerText = "En 2007: "+donneeCand["2007"];
+                li5.id = "li5";
+                list_pres.appendChild(li5);
+            }
+            if(donneeCand["Nombre_presentation_2012"] === 1){
+                var li6 = document.createElement("li");
+                li6.innerText = "En 2012: "+donneeCand["2012"];
+                li6.id = "li6";
+                list_pres.appendChild(li6);
+            }
+            if(donneeCand["Nombre_presentation_2017"] === 1){
+                var li7 = document.createElement("li");
+                li7.innerText = "En 2017: "+donneeCand["2017"];
+                li7.id = "li7";
+                list_pres.appendChild(li7);
+            }
+            sectinvi.appendChild(list_pres);
+
+            var list_elu = document.createElement('ul');
+            list_elu.id = "list_eluC";
+            if(donneeCand["Nombre_Elu_1988"] === 1){
+                var li1e = document.createElement("li");
+                li1e.innerText = "En 1988";
+                li1e.id = "li1e";
+                list_elu.appendChild(li1e);
+            }
+            if(donneeCand["Nombre_Elu_1993"] === 1){
+                var li2e = document.createElement("li");
+                li2e.innerText = "En 1993";
+                li2e.id = "li2e";
+                list_elu.appendChild(li2e);
+            }
+            if(donneeCand["Nombre_Elu_1997"] === 1){
+                var li3e = document.createElement("li");
+                li3e.innerText = "En 1997";
+                li3e.id = "li3e";
+                list_elu.appendChild(li3e);
+            }
+            if(donneeCand["Nombre_Elu_2002"] === 1){
+                var li4e = document.createElement("li");
+                li4e.innerText = "En 2002";
+                li4e.id = "li4e";
+                list_elu.appendChild(li4e);
+            }
+            if(donneeCand["Nombre_Elu_2007"] === 1){
+                var li5e = document.createElement("li");
+                li5e.innerText = "En 2007";
+                li5e.id = "li5e";
+                list_elu.appendChild(li5e);
+            }
+            if(donneeCand["Nombre_Elu_2012"] === 1){
+                var li6e = document.createElement("li");
+                li6e.innerText = "En 2012";
+                li6e.id = "li6e";
+                list_elu.appendChild(li6e);
+            }
+            if(donneeCand["Nombre_Elu_2017"] === 1){
+                var li7e = document.createElement("li");
+                li7e.innerText = "En 2017";
+                li7e.id = "li7e";
+                list_elu.appendChild(li7e);
+            }
+            sectinvi.appendChild(list_elu);
+
             var newpresc = document.createElement('p');
             newpresc.id="presentationC";
             newpresc.innerText=donneeCand["Phrase_pres_cand"];
@@ -2915,6 +3078,34 @@ function doStuff(table){
             newpresepartc.id="presentationParti";
             newpresepartc.innerText=donneeCand["Phrase_pres_parti"];
             sectinvi.appendChild(newpresepartc);
+
+            if(donneeCand["Twitter"] != ""){
+                var newtwitterc = document.createElement('a');
+                newtwitterc.id="twitterC";
+                newtwitterc.href=donneeCand["Twitter"];
+                newtwitterc.innerHTML="<img src='img/twitter.png'>";
+                newtwitterc.target ="_blank";
+                sectinvi.appendChild(newtwitterc);
+            }
+            if(donneeCand["Facebook"] != ""){
+                var newfacebookc = document.createElement('a');
+                newfacebookc.id="facebookC";
+                newfacebookc.href=donneeCand["Facebook"];
+                newfacebookc.innerHTML="<img src='img/facebook.png'>";
+                newfacebookc.target ="_blank";
+                sectinvi.appendChild(newfacebookc);
+            }
+
+            if(donneeCand["Site_perso"] != ""){
+                var newurlc = document.createElement('a');
+                newurlc.id="urlC";
+                newurlc.href=donneeCand["Site_perso"];
+                newurlc.innerText=donneeCand["Site_perso"];
+                newurlc.target ="_blank";
+                sectinvi.appendChild(newurlc);
+            }
+            
+
             if(donneeCand["PodCast"] != ""){
                 var newleg = document.createElement('p');
                 newleg.id="legC";
@@ -2926,16 +3117,7 @@ function doStuff(table){
                 newaud.controls="controls";
                 sectinvi.appendChild(newaud);
             }
-            var newnbpresc = document.createElement('p');
-            newnbpresc.id="nbrPrestCr";
-            var calcpres = donneeCand["Nombre_presentation_1988"]+donneeCand["Nombre_presentation_1993"]+donneeCand["Nombre_presentation_1997"]+donneeCand["Nombre_presentation_2002"]+donneeCand["Nombre_presentation_2007"]+donneeCand["Nombre_presentation_2012"]+donneeCand["Nombre_presentation_2017"];
-            newnbpresc.innerHTML=calcpres +"</br>Candidatures présentées";
-            sectinvi.appendChild(newnbpresc);
-            var newnbelec = document.createElement('p');
-            newnbelec.id="nrbEluC";
-            var calcElu = donneeCand["Nombre_Elu_1988"]+donneeCand["Nombre_Elu_1993"]+donneeCand["Nombre_Elu_1997"]+donneeCand["Nombre_Elu_2002"]+donneeCand["Nombre_Elu_2007"]+donneeCand["Nombre_Elu_2012"]+donneeCand["Nombre_Elu_2017"];
-            newnbelec.innerHTML=calcElu + "</br> Mandats effecués";
-            sectinvi.appendChild(newnbelec);
+
         })
     })
     var fermes = document.querySelectorAll(".close");
@@ -2946,12 +3128,14 @@ function doStuff(table){
             var sectvisi = document.querySelector("#sect_visi_"+idinvi);
             sectvisi.style.display="block";
             parentclose.style.display="none";
+            parentclose.removeChild(document.querySelector("#carre_gris"));
             parentclose.removeChild(document.querySelector("#imgC"));
             parentclose.removeChild(document.querySelector("#prenomC"));
             parentclose.removeChild(document.querySelector("#NomC"));
             parentclose.removeChild(document.querySelector("#AgeC"));
             parentclose.removeChild(document.querySelector("#EtiquetteC"));
             parentclose.removeChild(document.querySelector("#nbrPrestCr"));
+            parentclose.removeChild(document.querySelector("#newsepC"));
             parentclose.removeChild(document.querySelector("#nrbEluC"));
             if(document.querySelector("#urlC")!=null){
                 parentclose.removeChild(document.querySelector("#urlC"));
@@ -2968,6 +3152,55 @@ function doStuff(table){
             }
             parentclose.removeChild(document.querySelector("#presentationC"));
             parentclose.removeChild(document.querySelector("#presentationParti"));
+
+            var list_pres = document.querySelector("#list_presC");
+           if(document.querySelector("#li1") !== null){
+                list_pres.removeChild(document.querySelector("#li1"));
+           }
+           if(document.querySelector("#li2") !== null){
+                list_pres.removeChild(document.querySelector("#li2"));
+           }
+           if(document.querySelector("#li3") !== null){
+                list_pres.removeChild(document.querySelector("#li3"));
+           }
+           if(document.querySelector("#li4") !== null){
+                list_pres.removeChild(document.querySelector("#li4"));
+           }
+           if(document.querySelector("#li5") !== null){
+                list_pres.removeChild(document.querySelector("#li5"));
+           }
+           if(document.querySelector("#li6") !== null){
+                list_pres.removeChild(document.querySelector("#li6"));
+           }
+           if(document.querySelector("#li7") !== null){
+                list_pres.removeChild(document.querySelector("#li7"));
+           }
+           parentclose.removeChild(list_pres);
+
+           var list_elu = document.querySelector("#list_eluC");
+           if(document.querySelector("#li1e") !== null){
+                list_elu.removeChild(document.querySelector("#li1e"));
+           }
+           if(document.querySelector("#li2e") !== null){
+                list_elu.removeChild(document.querySelector("#li2e"));
+           }
+           if(document.querySelector("#li3e") !== null){
+                list_elu.removeChild(document.querySelector("#li3e"));
+           }
+           if(document.querySelector("#li4e") !== null){
+                list_elu.removeChild(document.querySelector("#li4e"));
+           }
+           if(document.querySelector("#li5e") !== null){
+                list_elu.removeChild(document.querySelector("#li5e"));
+           }
+           if(document.querySelector("#li6e") !== null){
+                list_elu.removeChild(document.querySelector("#li6e"));
+           }
+           if(document.querySelector("#li7e") !== null){
+                list_elu.removeChild(document.querySelector("#li7e"));
+           }
+           parentclose.removeChild(list_elu);
+
         })
     })
     
