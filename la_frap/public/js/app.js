@@ -2982,7 +2982,7 @@ function doStuff(table){
             list_pres.id = "list_presC";
             if(donneeCand["Nombre_presentation_1988"] === 1){
                 var li1 = document.createElement("li");
-                li1.innerText = "1988: "+donneeCand["1988"];
+                li1.innerText = "En 1988: "+donneeCand["1988"];
                 li1.id = "li1";
                 list_pres.appendChild(li1);
             }
