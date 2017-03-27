@@ -190,48 +190,53 @@ function doStuff(table){
                     colors.push(datacol[ind][2])
                     }
 
-                var chart = {
-                    type: "bar",
-                    data :{
-                        labels: chartdatalabels,
-                        datasets : [{
-                            label: 'Pourcentage',
-                            data: chartdata,
-                            backgroundColor: colors,
-                            borderColor: colors,
-                            borderWidth: 1
-                            }]
-                        },
+                if (chartdata.length != 0 && chartdata[0] != ""){
+                    var chart = {
+                        type: "bar",
+                        data :{
+                            labels: chartdatalabels,
+                            datasets : [{
+                                label: 'Pourcentage',
+                                data: chartdata,
+                                backgroundColor: colors,
+                                borderColor: colors,
+                                borderWidth: 1
+                                }]
+                            },
 
-                    options: {
-                        scales: {
-                                    xAxes: [{
-                                        display: false,
-                                        categoryPercentage: 0.95,
-                                        barPercentage: 1.0
-                                    }]
-                                },
-                        responsive:false,
-                        maintainAspectRatio: false,
-                        animation: false,
+                        options: {
+                            scales: {
+                                        xAxes: [{
+                                            display: false,
+                                            categoryPercentage: 0.95,
+                                            barPercentage: 1.0
+                                        }]
+                                    },
+                            responsive:false,
+                            maintainAspectRatio: false,
+                            animation: false,
 
-                        legend: {
-                            display: false
-                        },
-                        hover: {
-                            intersect: false,
+                            legend: {
+                                display: false
+                            },
+                            hover: {
+                                intersect: false,
+                            }
                         }
-                    }
 
-                };
+                    };
 
+                    
+                    
+                    var idChart = "Chart_"+dep[0]+"_"+circ[0][1]+"_"+annee[curseur_annee];
+                    
+                    var ctx = document.getElementById(idChart).getContext('2d');
+                    var myChart = new Chart(ctx, chart);
+                    myChart.resize()
+
+                }
+                    
                 
-                
-                var idChart = "Chart_"+dep[0]+"_"+circ[0][1]+"_"+annee[curseur_annee];
-                
-                var ctx = document.getElementById(idChart).getContext('2d');
-                var myChart = new Chart(ctx, chart);
-                myChart.resize()
 
 
             }
@@ -283,48 +288,54 @@ function doStuff(table){
                     colors.push(datacol[ind][2])
                     }
 
-                var chart = {
-                    type: "bar",
-                    data :{
-                        labels: chartdatalabels,
-                        datasets : [{
-                            label: 'Pourcentage',
-                            data: chartdata,
-                            backgroundColor: colors,
-                            borderColor: colors,
-                            borderWidth: 1
-                            }]
-                        },
+                if (chartdata.length != 0 && chartdata[0] != ""){
+                    var chart = {
+                        type: "bar",
+                        data :{
+                            labels: chartdatalabels,
+                            datasets : [{
+                                label: 'Pourcentage',
+                                data: chartdata,
+                                backgroundColor: colors,
+                                borderColor: colors,
+                                borderWidth: 1
+                                }]
+                            },
 
-                    options: {
-                        scales: {
-                                    xAxes: [{
-                                        display: false,
-                                        categoryPercentage: 0.95,
-                                        barPercentage: 1.0
-                                    }]
-                                },
-                        responsive:false,
-                        maintainAspectRatio: false,
-                        animation: false,
+                        options: {
+                            scales: {
+                                        xAxes: [{
+                                            display: false,
+                                            categoryPercentage: 0.95,
+                                            barPercentage: 1.0
+                                        }]
+                                    },
+                            responsive:false,
+                            maintainAspectRatio: false,
+                            animation: false,
 
-                        legend: {
-                            display: false
-                        },
-                        hover: {
-                            intersect: false,
+                            legend: {
+                                display: false
+                            },
+                            hover: {
+                                intersect: false,
+                            }
                         }
-                    }
 
-                };
+                    };
 
+                    
+                    
+                    var idChart = "Chart_"+dep[0]+"_"+circ[1][1]+"_"+annee[curseur_annee];
+
+                    if (annee[curseur_annee]==2017){console.log(chart)}
+                    
+                    var ctx = document.getElementById(idChart).getContext('2d');
+                    var myChart = new Chart(ctx, chart);
+                    myChart.resize()
+
+                }
                 
-                
-                var idChart = "Chart_"+dep[0]+"_"+circ[1][1]+"_"+annee[curseur_annee];
-                
-                var ctx = document.getElementById(idChart).getContext('2d');
-                var myChart = new Chart(ctx, chart);
-                myChart.resize()
 
             }
             if(14<i && i<22){
@@ -374,7 +385,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -417,6 +428,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
             }
         }
         if(21<i && i<56){
@@ -468,7 +481,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -511,6 +524,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
 
             }
             if(28<i && i<36){
@@ -560,7 +575,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -603,6 +618,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
 
             }
             if(35<i && i<43){
@@ -653,7 +670,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -696,6 +713,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
             }
             if(42<i && i<50){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -745,7 +764,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -788,6 +807,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
             }
             if(49<i && i<57){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -836,7 +857,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -879,6 +900,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
             }
         }
         if(56<i && i<127){
@@ -929,7 +952,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -972,6 +995,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
             }
             if(63<i && i<71){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -1020,7 +1045,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -1063,6 +1088,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
             }
             if(70<i && i<78){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -1112,7 +1139,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -1155,6 +1182,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
             }
             if(77<i && i<85){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -1204,7 +1233,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -1247,6 +1276,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
             }
             if(84<i && i<92){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -1296,7 +1327,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -1339,6 +1370,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
             }
             if(91<i && i<99){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -1387,7 +1420,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -1430,6 +1463,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
             }
             if(98<i && i<106){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -1478,7 +1513,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -1521,6 +1556,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
             }
             if(105<i && i<113){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -1569,7 +1606,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -1612,6 +1649,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
             }
             if(112<i && i<120){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -1660,7 +1699,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -1703,6 +1742,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
             }
             if(119<i && i<127){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -1752,7 +1793,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -1795,6 +1836,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
             }
         }
         if(126<i && i<176){
@@ -1845,7 +1888,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -1888,6 +1931,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
             }
             if(133<i && i<141){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -1936,7 +1981,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -1979,6 +2024,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
             }
             if(140<i && i<148){
                 var elem = document.querySelector('#sect_cand_'+i);
@@ -2028,7 +2075,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -2071,6 +2118,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
 
             }
             if(147<i && i<155){
@@ -2121,7 +2170,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -2160,10 +2209,12 @@ function doStuff(table){
                 
                 
                 var idChart = "Chart_"+dep[3]+"_"+circ[3][1]+"_"+annee[curseur_annee];
-                console.log(idChart)
+                
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
 
             }
             if(154<i && i<162){
@@ -2214,7 +2265,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -2257,6 +2308,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
 
             }
             if(161<i && i<169){
@@ -2307,7 +2360,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -2350,6 +2403,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
 
             }
             if(168<i && i<176){
@@ -2399,7 +2454,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -2442,6 +2497,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
             }
         }
         if(175<i && i<211){
@@ -2493,7 +2550,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -2536,6 +2593,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
 
             }
             if(182<i && i<190){
@@ -2586,7 +2645,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -2629,6 +2688,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
 
             }
             if(189<i && i<197){
@@ -2679,7 +2740,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -2722,6 +2783,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
 
             }
             if(196<i && i<204){
@@ -2772,7 +2835,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -2815,6 +2878,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
 
             }
             if(203<i && i<211){
@@ -2865,7 +2930,7 @@ function doStuff(table){
                     chartdatalabels.push(datacol[ind][1])
                     colors.push(datacol[ind][2])
                     }
-
+if (chartdata.length != 0 && chartdata[0] != ""){
                 var chart = {
                     type: "bar",
                     data :{
@@ -2908,6 +2973,8 @@ function doStuff(table){
                 var ctx = document.getElementById(idChart).getContext('2d');
                 var myChart = new Chart(ctx, chart);
                 myChart.resize()
+
+            }
 
             }
         }
