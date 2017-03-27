@@ -641,13 +641,39 @@ body {
     text-decoration: none;
     color: #787979;
     font-size: 2vw;
+    z-index: 999;
 }
+
+
 
 #listeTeam{
     position: absolute;
-    top: 10vw;
-    left: 10vw;
+    top: 8vw;
+    left: 20vw;
     list-style-type: none;
+    font-size: 1.5vw;
+    font-family: "Roboto";
+    color: #787979;
+}
+
+#listeTeam2{
+    position: absolute;
+    top: 8vw;
+    left: 40vw;
+    list-style-type: none;
+    font-size: 1.5vw;
+    font-family: "Roboto";
+    color: #787979;
+}
+
+#Porteur {
+	position: absolute;
+    top: 8vw;
+    left: 60vw;
+    list-style-type: none;
+    font-size: 1.5vw;
+    font-family: "Roboto";
+    color: #787979;
 }
 
 #textdebut{
@@ -662,18 +688,69 @@ body {
 .img_Hyb{
     width: 15vw;
     position: absolute;
-    top: 2vw;
-    left: 44vw;
+    top: 3vw;
+    left: 44.5vw;
 }
 
-#Creative img{
-    width:1vw;
+#textPartenaire{
+	position: absolute;
+    top: 20vw;
+    left: 10vw;
+   
+    font-size: 1.5vw;
+    font-family: "Roboto";
+    color: #787979;
 }
 
-#organisateurs a img{
-    width: 2vw;
+
+#organisateurs {
+	display: flex;
+	flex-direction: row;
+    position: absolute;
+    top: 25vw;
+    left: 10vw;
+    list-style-type: none;
+    height: 2vw;
+    flex-wrap: wrap;
+
+}
+
+#organisateurs li a img{
+    width: 10vw;
+}
+
+#organisateurs li {
+	margin-right: 3vw;
 }
 
 #Partenaire a img{
     width: 2vw;
+}
+
+#NomTeam {
+	position :absolute;
+    top: 5vw;
+    left: 10vw;
+    list-style-type: none;
+    font-size: 1.5vw;
+    font-family: "Roboto";
+    color: #787979;
+
+}
+
+#cc {
+	width:5vw;
+}
+
+#opensource {
+	width:5vw;
+}
+
+#section36 {
+	z-index:999;
+}
+
+#textebleu {
+	color: #00a9ff;
+	text-decoration-style: underline;
 }
