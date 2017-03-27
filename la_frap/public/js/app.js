@@ -169,11 +169,13 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.className="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -268,11 +270,13 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -366,11 +370,13 @@ function doStuff(table){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -461,11 +467,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -556,11 +564,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -650,11 +660,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -744,11 +756,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -838,11 +852,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -933,11 +949,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -1026,11 +1044,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -1119,11 +1139,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -1213,11 +1235,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -1307,11 +1331,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -1401,11 +1427,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -1494,11 +1522,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -1587,11 +1617,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -1680,11 +1712,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -1773,11 +1807,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -1869,11 +1905,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -1962,11 +2000,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -2055,11 +2095,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -2150,11 +2192,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -2245,11 +2289,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -2340,11 +2386,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -2435,11 +2483,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -2530,11 +2580,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -2625,11 +2677,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -2720,11 +2774,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -2815,11 +2871,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })
@@ -2910,11 +2968,13 @@ if (chartdata.length != 0 && chartdata[0] != ""){
                         newElemR.style.backgroundColor= color;
                         elem.appendChild(newElemR);
                         elem.appendChild(newElemP);
+                        var newElemS =  document.createElement('img');
+                        newElemS.className="son_cand";
+                        newElemS.src="img/poadcast.png"
+                        newElemS.style.visibility ='hidden';
+                        elem.appendChild(newElemS);
                         if(item["PodCast"] !=="" ){
-                            var newElemS =  document.createElement('img');
-                            newElemS.id="son_cand";
-                            newElemS.src="img/poadcast.png"
-                            elem.appendChild(newElemS);
+                            newElemS.style.visibility="visible"
                         }
                     }  
                 })

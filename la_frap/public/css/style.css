@@ -386,7 +386,7 @@ body {
     width: 50vw !important;
     height: 15vw !important;
     position: relative;
-  	top: 1vw;
+  	top: 1.5vw;
   	z-index: 9;
 }
 
@@ -400,8 +400,9 @@ body {
   	line-height: 1vw;
   	font-size: 0.3vw;
   	position: relative;
-  	top: 6vw;
-  	right: -1vw;  
+  	top: 10vw;
+  	margin-right: 1.5vw;  
+  	margin-left: 1.5vw;
     
   }
 
@@ -410,15 +411,15 @@ body {
   text-transform: capitalize; 
   /*margin-top: 3vw;*/
 
-  width: 11.5vw;
+  width: 11vw;
   position: relative;
-  top: 6vw; 
+  top: 10vw; 
 }
-#son_cand{
+.son_cand{
 	width: 1.5vw;
 	position: relative;
-	top: 6vw;
-	left: -2.5vw;
+	top: 10vw;
+	left: -2vw;
 }
 
 /* ------------------------------------------------------------ CV ------------------------------------- */
