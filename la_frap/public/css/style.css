@@ -548,10 +548,10 @@ body {
 	font-size: 1.1vw;
 }
 #presentationC{
-    max-width: 37vw;
-    position: relative;
-    top: -45vw;
-    left: 32.5vw;
+    width: 37vw;
+    position: absolute;
+    top: 20vw;
+    right: 30vw;
     /*text-align: left;*/
     font-size: 1.3vw;
     font-family: "Roboto";
@@ -559,10 +559,11 @@ body {
     font-weight: 400;
 }
 #presentationParti{
-    position: relative;
-    max-width: 37vw;
-    left: 32.5vw;
-    top: -44vw;
+    position: absolute;
+    width: 37vw;
+    height: 10vw;
+    right: 30vw;
+    top: 30vw;
     font-size: 1.3vw;
     font-family: "Roboto";
     color: #787979;
@@ -601,13 +602,13 @@ body {
 }
 #podC{
 	position: relative;
-	top: -71.5vw;
+	top: -55.5vw;
 	left:55vw;
 	z-index: 2;
 }
 #legC{
 	position: relative;
-	top: -68.8vw;
+	top: -52.8vw;
 	left:30vw;
 	font-size: 1.2vw;
 	font-family: "Roboto";
