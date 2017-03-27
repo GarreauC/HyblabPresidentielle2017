@@ -188,6 +188,7 @@ body {
 	left: 19vw;
 	font-weight: bold;
 	font-size: 1.2vw;
+	width: 13vw;
 }
 
 /*Sarthe*/
@@ -209,6 +210,7 @@ body {
 	left: 19vw;
 	font-weight: bold;
 	font-size: 1.2vw;
+	width: 13vw;
 }
 
 /*Loire-Atlantique*/
@@ -223,13 +225,16 @@ body {
 	position: relative;
 	top: -25.5vw;
 	left: -12vw;
-}	
+
+}
+
 .text_ville_la{
 	position: relative;
 	top: -29.5vw;
 	left: -8vw;
 	font-weight: bold;
 	font-size: 1.2vw;
+	width: 13vw;
 }
 
 /*Maine et Loire*/
@@ -251,6 +256,7 @@ body {
 	left: 19vw;
 	font-weight: bold;
 	font-size: 1.2vw;
+	width: 13vw;
 }
 
 /*Vendee*/
@@ -272,6 +278,7 @@ body {
 	left: 19vw;
 	font-weight: bold;
 	font-size: 1.2vw;
+	width: 13vw;
 }
 
 /*-------------------------------------------------------Slide Corps------------------------------------------------*/
