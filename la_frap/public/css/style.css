@@ -548,10 +548,10 @@ body {
 	font-size: 1.1vw;
 }
 #presentationC{
-    width: 37vw;
+    width: 40vw;
     position: absolute;
-    top: 20vw;
-    right: 30vw;
+    top: 19vw;
+    right: 27vw;
     /*text-align: left;*/
     font-size: 1.3vw;
     font-family: "Roboto";
@@ -560,39 +560,39 @@ body {
 }
 #presentationParti{
     position: absolute;
-    width: 37vw;
+    width: 40vw;
     height: 10vw;
-    right: 30vw;
-    top: 30vw;
+    right: 27vw;
+    top: 28vw;
     font-size: 1.3vw;
     font-family: "Roboto";
     color: #787979;
     font-weight: 400;
 }
 #twitterC{
-    position: relative;
-    top: -74vw;
-    left: 67.2vw;
+    position: absolute;
+    top: 5.5vw;
+    right: 33.7vw;
     z-index: 2;
 }
 #twitterC img{
-    width: 2vw;
+    width: 2.1vw;
     z-index: 2;
 }
 #facebookC{
-    position: relative;
-    top: -74vw;
-    left: 68.2vw; 
+    position: absolute;
+    top: 5.5vw;
+    right: 31vw; 
     z-index: 2;
 }
 #facebookC img{
-    width: 2.2vw;
+    width: 2.1vw;
     z-index: 2;
 }
 #urlC{
-    position: relative;
-    top: -72.5vw;
-    left: 63vw;
+    position: absolute;
+    top: 8vw;
+    right: 20vw;
     z-index: 2;
     font-family: "Roboto";
     font-size: 1.1vw;
@@ -601,15 +601,16 @@ body {
 
 }
 #podC{
-	position: relative;
-	top: -55.5vw;
-	left:55vw;
+	position: absolute;
+    right: 24.8vw;
+    top: 14vw;
 	z-index: 2;
+	width: 50vw;
 }
 #legC{
-	position: relative;
-	top: -52.8vw;
-	left:30vw;
+	position: absolute;
+    top: 11vw;
+    right: 56.5vw;
 	font-size: 1.2vw;
 	font-family: "Roboto";
     color: #787979;
