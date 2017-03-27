@@ -342,6 +342,7 @@ body {
   	height: 1.6vw;
   	position: relative;
   	top: 1vw;
+  	text-decoration: none;
 }
 
 .annee1{
@@ -616,4 +617,62 @@ body {
     color: #787979;
     font-weight: 400;
 	z-index: 2;
+}
+
+/*----------------------- Credits -----------------------------------*/
+
+.liencredits{
+    position:absolute;
+    top: 3vw;
+    right: 10vw;
+    font-family: "Roboto";
+    text-decoration: none;
+    color: #787979;
+    font-size: 1vw;
+      
+}
+
+.retourfromcredit{
+    position: absolute;
+    top:1vw;
+    right:1vw;
+    font-family: "Roboto";
+    text-decoration: none;
+    color: #787979;
+    font-size: 2vw;
+}
+
+#listeTeam{
+    position: absolute;
+    top: 10vw;
+    left: 10vw;
+    list-style-type: none;
+}
+
+#textdebut{
+    position: absolute;
+    top:0.2vw;
+    left: 47vw;
+    font-family: "Roboto";
+    color: #787979;
+    font-size: 1vw;
+    
+}
+.img_Hyb{
+    width: 15vw;
+    position: absolute;
+    top: 2vw;
+    left: 44vw;
+}
+
+#Creative img{
+    width:1vw;
+}
+
+#organisateurs a img{
+    width: 2vw;
+}
+
+#Partenaire a img{
+    width: 2vw;
 }
