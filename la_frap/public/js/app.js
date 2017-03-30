@@ -143,7 +143,7 @@ function doStuff(table){
 
 
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[0];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -244,7 +244,7 @@ function doStuff(table){
             }
             if(7<i && i<15){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[0];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -344,7 +344,7 @@ function doStuff(table){
             }
             if(14<i && i<22){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[0];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -441,7 +441,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
         if(21<i && i<56){
             if(i<29){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -538,7 +538,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(28<i && i<36){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -634,7 +634,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(35<i && i<43){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -730,7 +730,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(42<i && i<50){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -826,7 +826,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(49<i && i<57){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[1];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -923,7 +923,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
         if(56<i && i<127){
             if(i<64){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -1018,7 +1018,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(63<i && i<71){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -1113,7 +1113,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(70<i && i<78){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -1209,7 +1209,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(77<i && i<85){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -1305,7 +1305,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(84<i && i<92){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -1401,7 +1401,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(91<i && i<99){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[5]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -1496,7 +1496,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(98<i && i<106){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[6]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -1591,7 +1591,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(105<i && i<113){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[7]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -1686,7 +1686,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(112<i && i<120){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[8]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -1781,7 +1781,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(119<i && i<127){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[9]+"_"+dep[2];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -1879,7 +1879,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
         if(126<i && i<176){
             if(i<134){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -1974,7 +1974,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(133<i && i<141){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -2069,7 +2069,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(140<i && i<148){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -2166,7 +2166,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(147<i && i<155){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -2263,7 +2263,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(154<i && i<162){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -2360,7 +2360,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(161<i && i<169){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[5]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -2457,7 +2457,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(168<i && i<176){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[6]+"_"+dep[3];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -2554,7 +2554,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
         if(175<i && i<211){
             if(i<183){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[0]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -2651,7 +2651,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(182<i && i<190){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[1]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -2748,7 +2748,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(189<i && i<197){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[2]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -2845,7 +2845,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(196<i && i<204){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[3]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -2942,7 +2942,7 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             }
             if(203<i && i<211){
                 var elem = document.querySelector('#sect_cand_'+i);
-                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 30%;height: 10%;width: 14.3%;align-items: center;align-content:flex-start; justify-content: center;")
+                elem.setAttribute("style","display: flex ; flex-direction: row; flex-wrap: wrap;position: absolute;top: 40vw;align-items: center;align-content:center; justify-content: center;width: 100%")
                 table.data.forEach(function(item){
                     var cirdep = circ[4]+"_"+dep[4];
                     if(cirdep === item[annee[curseur_annee]]){
@@ -3109,43 +3109,50 @@ if (chartdata.length != 0 && chartdata[0] != ""){
             list_pres.id = "list_presC";
             if(donneeCand["Nombre_presentation_1988"] === 1){
                 var li1 = document.createElement("li");
-                li1.innerText = "En 1988: "+donneeCand["1988"];
+                var datamand = donneeCand["1988"].split("_")[1]+ ", Circonscription " + donneeCand["1988"].split("_")[0][1]
+                li1.innerText = "1988: "+datamand;
                 li1.id = "li1";
                 list_pres.appendChild(li1);
             }
             if(donneeCand["Nombre_presentation_1993"] === 1){
                 var li2 = document.createElement("li");
-                li2.innerText = "En 1993: "+donneeCand["1993"];
+                var datamand = donneeCand["1993"].split("_")[1]+ ", Circonscription " + donneeCand["1993"].split("_")[0][1]
+                li2.innerText = "1993: "+datamand;
                 li2.id = "li2";
                 list_pres.appendChild(li2);
             }
             if(donneeCand["Nombre_presentation_1997"] === 1){
                 var li3 = document.createElement("li");
-                li3.innerText = "En 1997: "+donneeCand["1997"];
+                var datamand = donneeCand["1997"].split("_")[1]+ ", Circonscription " + donneeCand["1997"].split("_")[0][1]
+                li3.innerText = "1997: "+datamand;
                 li3.id = "li3";
                 list_pres.appendChild(li3);
             }
             if(donneeCand["Nombre_presentation_2002"] === 1){
                 var li4 = document.createElement("li");
-                li4.innerText = "En 2002: "+donneeCand["2002"];
+                var datamand = donneeCand["2002"].split("_")[1]+ ", Circonscription " + donneeCand["2002"].split("_")[0][1]
+                li4.innerText = "2002: "+datamand;
                 li4.id = "li4";
                 list_pres.appendChild(li4);
             }
             if(donneeCand["Nombre_presentation_2007"] === 1){
                 var li5 = document.createElement("li");
-                li5.innerText = "En 2007: "+donneeCand["2007"];
+                var datamand = donneeCand["2007"].split("_")[1]+ ", Circonscription " + donneeCand["2007"].split("_")[0][1]
+                li5.innerText = "2007: "+datamand;
                 li5.id = "li5";
                 list_pres.appendChild(li5);
             }
             if(donneeCand["Nombre_presentation_2012"] === 1){
                 var li6 = document.createElement("li");
-                li6.innerText = "En 2012: "+donneeCand["2012"];
+                var datamand = donneeCand["2012"].split("_")[1]+ ", Circonscription " + donneeCand["2012"].split("_")[0][1]
+                li6.innerText = "2012: "+datamand;
                 li6.id = "li6";
                 list_pres.appendChild(li6);
             }
             if(donneeCand["Nombre_presentation_2017"] === 1){
                 var li7 = document.createElement("li");
-                li7.innerText = "En 2017: "+donneeCand["2017"];
+                var datamand = donneeCand["2017"].split("_")[1]+ ", Circonscription " + donneeCand["2017"].split("_")[0][1]
+                li7.innerText = "2017: "+datamand;
                 li7.id = "li7";
                 list_pres.appendChild(li7);
             }

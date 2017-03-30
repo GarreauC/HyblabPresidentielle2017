@@ -19,6 +19,14 @@ body {
 }
 */
 
+.section{
+	position: relative;
+}
+
+.slide{
+	position: relative;
+}
+
 /*-------------------------------------------------Region-----------------------------------------------------*/
 .carre{
 	background-color: #FFF;
@@ -337,6 +345,7 @@ body {
 	text-align: center;
 	line-height: 1.6vw;
 	font-size: 1.1vw;
+	font-family: "Roboto";
 	/*font-weight: bold;*/
   	width: 7vw;
   	height: 1.6vw;
@@ -388,6 +397,12 @@ body {
     position: relative;
   	top: 1.5vw;
   	z-index: 9;
+  	padding-bottom: 1.3vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    border-bottom: solid;
+    border-width: thin;
+    border-bottom-color: darkgray;
 }
 
 /*Candidats*/
@@ -400,25 +415,46 @@ body {
   	line-height: 1vw;
   	font-size: 0.3vw;
   	position: relative;
-  	top: 10vw;
+  	/*top: 10vw;*/
   	margin-right: 1.5vw;  
   	margin-left: 1.5vw;
     
   }
 
+#sect_cand{
+	border-top: solid;
+	border-width: 50%;
+
+}
+
 .cand{   
+  
   text-align: center;
   text-transform: capitalize; 
-  /*margin-top: 3vw;*/
-
+  font-family: "Roboto";
+  font-size: 1vw;
+  padding-bottom: 0.7vw;
   width: 11vw;
   position: relative;
-  top: 10vw; 
+  border-bottom: solid;
+  border-bottom-color: rgba(0,169,255,0);
+  border-width: 0.2vw;
+  top: 0.2vw;
+  
+  margin-top: 0.3vw;
+  margin-bottom: 0.3vw;
 }
+
+.cand:hover {
+	color :#00a9ff;
+	cursor: pointer;
+	border-bottom-color: rgba(0,169,255,1);
+}
+
 .son_cand{
 	width: 1.5vw;
 	position: relative;
-	top: 10vw;
+	
 	left: -2vw;
 }
 
@@ -427,10 +463,19 @@ body {
 	position: relative;
 	float: right;
     width: 1.2vw;
-    top: 1.5vw;
-    right: 1.5vw;
+    /*top: 1.5vw;
+    right: 1.5vw;*/
     z-index: 2;
+    padding: 2vw;
+    -webkit-transition: 0.2s;
 }
+
+.close:hover{
+	cursor: pointer;
+	background-color: red;
+	-webkit-transition: 0.2s;
+}
+
 #carre_gris{
 	background-color: #f2f2f2;
 	height: 20vw;
@@ -496,7 +541,7 @@ body {
     text-align: center;
     position: relative;
     max-width: 25vw;
-    top: 0vw;
+    top: -1vw;
     left: 28vw;
     font-family: "Roboto";
     font-size: 1.3vw;  
@@ -512,13 +557,13 @@ body {
     height:6vw;
     background-color: #787979;
    	position: relative;
-    top: -2vw;
+    top: -3vw;
     left: 51vw;
 }
 #nrbEluC{
     text-align: center;
     position: relative;
-    top: -10vw;
+    top: -11vw;
     /*top: -8.6vw;*/
     max-width: 25vw;
     left: 48vw;
@@ -533,21 +578,23 @@ body {
 }*/
 #list_presC{
 	position: relative;
-	top: -11.1vw;
+	top: -12.1vw;
 	left: 34vw;
 	font-family: "Roboto";
 	font-weight: 300;
-	color: #787979;
+	color: #484848;
 	font-size: 1.1vw;
+	left: 32vw;
 }
 #list_eluC{
 	position: relative;
-	top: -17.5vw;
+	top: -18.5vw;
 	left: 56.5vw;
 	font-family: "Roboto";
 	font-weight: 300;
-	color: #787979;
+	color: #484848;
 	font-size: 1.1vw;
+
 }
 #presentationC{
     width: 40vw;
@@ -594,8 +641,8 @@ body {
 #urlC{
     position: absolute;
     top: 8vw;
-    right: 20vw;
-    z-index: 2;
+    left: 64.3vw;
+    z-index:2;
     font-family: "Roboto";
     font-size: 1.1vw;
     color: #787979;
@@ -641,39 +688,13 @@ body {
     text-decoration: none;
     color: #787979;
     font-size: 2vw;
-    z-index: 999;
 }
-
-
 
 #listeTeam{
     position: absolute;
-    top: 8vw;
-    left: 20vw;
+    top: 10vw;
+    left: 10vw;
     list-style-type: none;
-    font-size: 1.5vw;
-    font-family: "Roboto";
-    color: #787979;
-}
-
-#listeTeam2{
-    position: absolute;
-    top: 8vw;
-    left: 40vw;
-    list-style-type: none;
-    font-size: 1.5vw;
-    font-family: "Roboto";
-    color: #787979;
-}
-
-#Porteur {
-	position: absolute;
-    top: 8vw;
-    left: 60vw;
-    list-style-type: none;
-    font-size: 1.5vw;
-    font-family: "Roboto";
-    color: #787979;
 }
 
 #textdebut{
@@ -688,69 +709,41 @@ body {
 .img_Hyb{
     width: 15vw;
     position: absolute;
-    top: 3vw;
-    left: 44.5vw;
+    top: 2vw;
+    left: 44vw;
 }
 
-#textPartenaire{
-	position: absolute;
-    top: 20vw;
-    left: 10vw;
-   
-    font-size: 1.5vw;
-    font-family: "Roboto";
-    color: #787979;
+#Creative img{
+    width:1vw;
 }
 
-
-#organisateurs {
-	display: flex;
-	flex-direction: row;
-    position: absolute;
-    top: 25vw;
-    left: 10vw;
-    list-style-type: none;
-    height: 2vw;
-    flex-wrap: wrap;
-
-}
-
-#organisateurs li a img{
-    width: 10vw;
-}
-
-#organisateurs li {
-	margin-right: 3vw;
+#organisateurs a img{
+    width: 2vw;
 }
 
 #Partenaire a img{
     width: 2vw;
 }
 
-#NomTeam {
-	position :absolute;
-    top: 5vw;
-    left: 10vw;
-    list-style-type: none;
-    font-size: 1.5vw;
-    font-family: "Roboto";
-    color: #787979;
 
-}
 
-#cc {
-	width:5vw;
-}
 
-#opensource {
-	width:5vw;
-}
 
-#section36 {
-	z-index:999;
-}
 
-#textebleu {
-	color: #00a9ff;
-	text-decoration-style: underline;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
