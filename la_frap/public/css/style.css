@@ -800,7 +800,8 @@ body {
     top: 30vw;
     left: 13vw;
     list-style-type: none;
-    align-content: flex-start;
+    align-content: stretch;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     width: 80vw;
