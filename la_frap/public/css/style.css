@@ -577,9 +577,9 @@ body {
     font-size: 5vw;
 }*/
 #list_presC{
-	position: relative;
-	top: -12.1vw;
-	left: 34vw;
+	position: absolute;
+    top: 39.5vw;
+    right: 39.5vw;
 	font-family: "Roboto";
 	font-weight: 300;
 	color: #484848;
@@ -587,9 +587,9 @@ body {
 	left: 32vw;
 }
 #list_eluC{
-	position: relative;
-	top: -18.5vw;
-	left: 56.5vw;
+	position: absolute;
+	top: 39.5vw;
+    right: 39.5vw;
 	font-family: "Roboto";
 	font-weight: 300;
 	color: #484848;
@@ -669,6 +669,11 @@ body {
 
 /*----------------------- Credits -----------------------------------*/
 
+#Credits {
+    z-index: 999;
+}
+
+
 .liencredits{
     position:absolute;
     top: 3vw;
@@ -688,6 +693,12 @@ body {
     text-decoration: none;
     color: #787979;
     font-size: 2vw;
+    padding: 1vw;
+}
+
+.retourfromcredit:hover{
+    background-color: darkgray;
+    color: white;
 }
 
 #listeTeam{
@@ -709,41 +720,89 @@ body {
 .img_Hyb{
     width: 15vw;
     position: absolute;
-    top: 2vw;
-    left: 44vw;
+    top: 2.5vw;
+    left: 44.5vw;
 }
 
-#Creative img{
-    width:1vw;
+#NomTeam{
+    position: absolute;
+    left:13vw;
+    top: 5vw;
+    font-size: 2vw;
+    font-family: 'Roboto';
+    color: #00a9ff;
 }
 
-#organisateurs a img{
-    width: 2vw;
+#Titreliste{
+    color: #787979;
 }
+
+#listeTeam ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+#ProgC {
+    position: absolute;
+    width: 15vw;
+    
+    font-size: 1.5vw;
+    font-family: 'Roboto';
+}
+
+#DesignC {
+    position: absolute;
+    left: 20vw;    
+    width: 15vw;
+    font-family: 'Roboto';
+    font-size: 1.5vw;
+}
+
+#Porteur{
+    position: absolute;
+    left: 55vw;
+    top: 10vw;
+    font-family: 'Roboto';
+    font-size: 1.5vw;
+}
+
+
+#cc {
+    width:5vw;
+    margin-right: 3vw
+}
+
+#opensource {
+    width: 5vw;
+    margin-right: 3vw;
+}
+
 
 #Partenaire a img{
-    width: 2vw;
+    width: 10vw;
+    margin-right: 3vw;
 }
 
+#textPartenaire{
+    position: absolute;
+    top: 24vw;
+    left: 13vw;
+    font-family: 'Roboto';
+    font-size: 2vw;
+    color: #00a9ff;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Partenaire ul {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 30vw;
+    left: 13vw;
+    list-style-type: none;
+    align-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80vw;
+}
 
